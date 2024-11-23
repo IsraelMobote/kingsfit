@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--primaryFont);
+}
+
+:root {
+    --primaryFont : 'Inter', Helvetica, sans-serif;
+    --backgroundColor: #E4F4FF;
+    --primaryColor: #0067C8;
+    --secondaryColor: #000000;
+    --tertiaryColor: #D9D9D9;
+}
+
+
+/*---------  the menu icon styling  --------*/
+
+header {
+    text-align: right;
+    padding: 1rem 2rem 1rem 1rem;
+    box-shadow: 0 3px 3px 3px var(--tertiaryColor);
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 45px;
+    height: 3.5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*---------  the Hero Image styling  --------*/
+
+.heroImage {
+    position: relative;
+    padding: 25px 2px;
+}
+
+.heroImage img {
+    width: 100%;
+    filter: brightness(78%);
+}
+
+.heroText {
+    max-height: 12rem;
+    background-color: rgba(128, 128, 128, 0.247);
+    margin-left: 22px;
+    padding: 1rem 1.5rem 1.5rem 0.8rem;
+    position: absolute;
+    bottom: 3rem;
+    width: 65%;
+    color: white;
+    backdrop-filter: blur(5px);
+    border-radius: 0 3rem 0 0;
+    box-sizing: border-box;
+}
+
+.heroImage .bolder {
+    font-size: 15px;
+    font-style: initial;
+    font-weight: 800;
+    line-height: 1.7;
+}
+
+.heroImage p {
+    font-size: 8px;
+    line-height: 2;
+}
