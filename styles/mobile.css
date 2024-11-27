@@ -90,3 +90,70 @@ header {
     font-size: 8px;
     line-height: 2;
 }
+
+/*------- slider section styling --------*/
+.sliderSection {
+    position: relative;
+}
+#actualSlider {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto 1rem;
+}
+
+#actualSlider > img {
+    width: 100%;
+    height: 12rem;
+}
+
+#actualSlider > p {
+    font-size: 0.8rem;
+    line-height: 2;
+    padding: 15px 10px;
+    background-image: linear-gradient( to right, #6f9cc733, white);
+}
+
+.sliderSection> .sliderIcons p {
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    width: fit-content;
+    padding: 3px 7px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.sliderIcons > p.hide {
+    display: none;
+}
+
+.sliderSection> .sliderIcons p:first-child {
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    left: 3%;
+}
+
+.sliderWayCircles {
+    margin: 0 auto 2rem;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sliderWayCircles > p {
+    margin: 0 3px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--tertiaryColor);
+}
+
+.sliderWayCircles > p.active {
+    padding: 4px 7px;
+    border-radius: 30%;
+    background-color: var(--primaryColor);
+}
