@@ -117,5 +117,5 @@ servicesList = [{
 }, {
   img: '',
   title: 'JANITORIAL/COMMERCIAL CLEANING',
-  textBody: 'First impression do matter! Give your customers a good first '
+  textBody: 'First impressions do matter! Give your customers a good first impression and also improve productivity at your work place with our quality cleaning services'
 }];
