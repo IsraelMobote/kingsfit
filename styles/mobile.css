@@ -65,7 +65,7 @@ header {
     position: absolute;
     margin: 0 auto;
     width: 100%;
-    height: 19rem;
+    height: 29rem;
     filter: brightness(0%);
     filter: saturate(150%);
     background-image: linear-gradient(black, black);
@@ -75,12 +75,12 @@ header {
     margin-top: 1rem;
     position: relative;
     width: 100%;
-    height: 19rem;
+    height: 29rem;
     background-color: rgba(0, 0, 0, 0.253);
     background-image: rgb(118, 156, 156);
 }
 .heroText {
-    height: 12.5rem;
+    height: fit-content;
     background-color: rgba(128, 128, 128, 0.247);
     margin-left: 22px;
     padding: 1.5rem 1.5rem 1.5rem 0.8rem;
@@ -124,7 +124,7 @@ header {
 
 #actualSlider > p {
     font-size: 0.8rem;
-    line-height: 2;
+    line-height: 1.7rem;
     padding: 15px 10px;
     background-image: linear-gradient( to right, #6f9cc733, white);
 }
