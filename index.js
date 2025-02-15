@@ -98,11 +98,11 @@ servicesList = [{
   textBody: 'Save cost, Let our professional cleaning team increase the life span of your investment. Improve the look and feel of marble and floor designs with our well trained team.'
 },
 {
-  img: '',
+  img: 'images/using-cleaning-solutions-to-clean-surfaces.webp',
   title: 'HOME/RESIDENTIAL CLEANING',
   textBody: 'Do you have a busy schedule or need professional cleaners to take care of your home or commercial apartment? We provide special quality domestic cleaning services'
 }, {
-  img: '',
+  img: 'images/medium-shot-workers-with-cleaning-cart.webp',
   title: 'EVENT/PRE & AFTER PARTY CLEANING',
   textBody: 'Your house or venue a mess after partying? Take out the after party cleaning stress with our cleaning team. Use our after party cleaning services for your next party or event'
 }, {
@@ -111,7 +111,7 @@ servicesList = [{
   textBody: 'We use modern equipments and quality friendly chemicals for carpet,rug and upholstery cleaning jobs. We offer hot water extraction by using powerful vacuum cleaners'
 },
 {
-  img: '',
+  img: 'images/Electrodry-Pest-Control-Services.webp',
   title: 'FUMIGATION AND RATTING',
   textBody: 'We offer the perfect selection of solutions to deal with; bed bugs, cockroaches, mosquitoes, snakes, scorpions, birdmites, rodent, insect or bird infestation'
 }, {
@@ -119,3 +119,39 @@ servicesList = [{
   title: 'JANITORIAL/COMMERCIAL CLEANING',
   textBody: 'First impressions do matter! Give your customers a good first impression and also improve productivity at your work place with our quality cleaning services'
 }];
+
+function displayServices() {
+
+  ourServices.innerHTML ='';
+
+  const heading = document.createElement('h1');
+  heading.textContent = 'Our Services';
+
+  ourServices.append(heading);
+
+  servicesList.forEach(element => {
+    const serviceContainer = document.createElement('div');
+
+    const image = document.createElement('img');
+    image.src = element.img;
+    image.loading = 'lazy';
+
+    const serviceItemHeading = document.createElement('h2');
+    serviceItemHeading.textContent = element.title;
+
+    const serviceItemParagraph = document.createElement('p');
+    serviceItemParagraph.textContent = element.textBody;
+
+    const serviceItemButton = document.createElement('span');
+    serviceItemButton.textContent = 'LEARN MORE';
+
+    serviceContainer.append(image);
+    serviceContainer.append(serviceItemHeading);
+    serviceContainer.append(serviceItemParagraph);
+    serviceContainer.append(serviceItemButton);
+
+    ourServices.append(serviceContainer);
+  });
+}
+
+displayServices();
