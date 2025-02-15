@@ -8,7 +8,7 @@
 
 :root {
     --primaryFont : 'Inter', Helvetica, sans-serif;
-    --backgroundColor: #e4f4ff6e;
+    --backgroundColor: #e4f4ff70;
     --primaryColor: #0067C8;
     --secondaryColor: #000000;
     --tertiaryColor: #D9D9D9;
@@ -187,8 +187,8 @@ header {
 }
 
 #our-services div {
-    width: 80%;
-    margin: 3rem auto;
+    width: 70%;
+    margin: 80px auto;
     background-image: linear-gradient(var(--backgroundColor), var(--backgroundColor), var(--backgroundColor), white);
 }
 
@@ -198,14 +198,16 @@ header {
 }
 
 #our-services h2 {
-    font-size: 1rem;
-    margin: 2rem 0 1rem;
+    font-size: 0.9rem;
+    margin: 1.9rem 0 0;
 }
 
 #our-services p {
-    font-size: 0.9rem;
-    width: 90%;
-    margin: 2rem auto 2rem;
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    width: 80%;
+    margin: 1.7rem auto 2rem;
 }
 
 #our-services span {
