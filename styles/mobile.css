@@ -225,7 +225,7 @@ header {
 
 #about-us h1 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 8rem auto 3rem;
 }
 
 #about-us div {
@@ -236,7 +236,7 @@ header {
 #about-us div > div {
     width: 65%;
     height: 250px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 5rem;
     border: 5px solid var(--primaryColor);
     border-radius: 0 20% 0 0;
 }
@@ -246,4 +246,11 @@ header {
     height: 255px;
     border-radius: 0 20% 0 0;
     transform: translate(1rem, 1rem);
+}
+
+#about-us div > p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
 }
