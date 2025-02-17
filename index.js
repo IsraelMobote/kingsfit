@@ -154,6 +154,7 @@ function displayServices() {
 
     const image = document.createElement('img');
     image.src = element.img;
+    image.alt = element.alt;
     image.loading = 'lazy';
 
     const serviceItemHeading = document.createElement('h2');
