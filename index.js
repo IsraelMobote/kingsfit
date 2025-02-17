@@ -141,6 +141,24 @@ aboutInfo = {
   You handle your business- We will handle the clean.`
 }
 
+cleaningTypes = [{
+  image: 'images/pnggg1(1).png',
+  title: 'Apartment Cleaning & Sanitizing',
+  moreInfo: 'Our thorough apartment cleaning services never miss the little details in your space!'
+},{
+  image: 'images/pnggg2(1).png',
+  title: 'Move In / Move Out Cleaning',
+  moreInfo: 'Moving can be messy but our cleaning professionals ensure a spotless clean'
+},{
+  image: 'images/pnggg3(1).png',
+  title: 'House Cleaning & Sanitizing',
+  moreInfo: 'Our unique Detail-Clean Rotation System ensures that your home is cleaned to the highest standard.'
+},{
+  image: 'images/pnggg4(1).png',
+  title: 'One-Time Cleaning Services',
+  moreInfo: 'We proudly offer customizable one-time cleaning programs to suit your needs.'
+}]
+
 function displayServices() {
 
   ourServices.innerHTML = '';
@@ -207,7 +225,9 @@ function displayAboutUs(element) {
   const paragraph3 = document.createElement('p')
   paragraph3.textContent = aboutInfo.paragraph3
 
-
+  cleaningTypes.forEach(item => {
+    const image = 
+  });
   aboutUsContainer.append(imageContainer);
 
   aboutUsContainer.append(paragraph2);
