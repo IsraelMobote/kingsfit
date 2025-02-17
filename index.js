@@ -127,7 +127,8 @@ servicesList = [{
 }];
 
 aboutInfo = {
-  image: '',
+  image: 'images/an-individual-using-a-glass-cleaner-to-wipe-glass-with-only-the hand-shown-in-the-image.webp',
+  imageAlt: 'an individual using a glass cleaner to wipe glass with only the hand shown in the image',
   paragraph1: `At kingsfit cleaning hub, we are more than just a cleaning service, we are partners in keeping your workspace spotless. 
   Whether it's an office, gym, medical facility, or co-working space. We make sure your environment
   reflects the high standards your business stands for`,
@@ -187,5 +188,32 @@ function displayAboutUs() {
 
   aboutUs.append(heading);
 
-  const aboutUsContainer = document.createElement('div')
+  const aboutUsContainer = document.createElement('div');
+
+  const imageContainer = document.createElement('div');
+  const img = document.createElement('img');
+  img.src = aboutUs.image;
+  img.alt = aboutUs.imageAlt;
+  img.loading = 'lazy';
+
+  imageContainer.append(img);
+
+  const paragraph1 = document.createElement('p')
+  paragraph1.textContent = aboutUs.paragraph1
+
+  const paragraph2 = document.createElement('p')
+  paragraph2.textContent = aboutUs.paragraph2
+
+  const paragraph3 = document.createElement('p')
+  paragraph3.textContent = aboutUs.paragraph3
+
+
+  aboutUsContainer.append(imageContainer);
+
+  aboutUsContainer.append(paragraph2);
+  aboutUsContainer.append(paragraph3);
+  aboutUsContainer.append(paragraph1);
+
+  aboutUs.append(aboutUsContainer);
+  
 }
