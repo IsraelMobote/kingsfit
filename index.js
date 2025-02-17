@@ -105,7 +105,7 @@ servicesList = [{
   textBody: 'Do you have a busy schedule or need professional cleaners to take care of your home or commercial apartment? We provide special quality domestic cleaning services'
 }, {
   img: 'images/medium-shot-workers-with-cleaning-cart.webp',
-  alt:'medium shot workers with cleaning cart',
+  alt: 'medium shot workers with cleaning cart',
   title: 'EVENT/PRE & AFTER PARTY CLEANING',
   textBody: 'Your house or venue a mess after partying? Take out the after party cleaning stress with our cleaning team. Use our after party cleaning services for your next party or event'
 }, {
@@ -116,19 +116,33 @@ servicesList = [{
 },
 {
   img: 'images/Electrodry-Pest-Control-Services.webp',
-  alt:'',
+  alt: '',
   title: 'FUMIGATION AND RATTING',
   textBody: 'We offer the perfect selection of solutions to deal with; bed bugs, cockroaches, mosquitoes, snakes, scorpions, birdmites, rodent, insect or bird infestation'
 }, {
   img: 'images/an-exterminator-working-to-exterminate-insects-or-rodents.webp',
-  alt:'an exterminator working to exterminate insects or rodents',
+  alt: 'an exterminator working to exterminate insects or rodents',
   title: 'JANITORIAL/COMMERCIAL CLEANING',
   textBody: 'First impressions do matter! Give your customers a good first impression and also improve productivity at your work place with our quality cleaning services'
 }];
 
+aboutInfo = {
+  image: '',
+  paragraph1: `At kingsfit cleaning hub, we are more than just a cleaning service, we are partners in keeping your workspace spotless. 
+  Whether it's an office, gym, medical facility, or co-working space. We make sure your environment
+  reflects the high standards your business stands for`,
+  paragraph2: `Our team of professionals delivers customized cleaning solutions 
+  tailored to the unique needs of modern spaces across Nigeria. 
+  From corporate offices to shared workspace and everything in between,
+   we adapt to ensure your space is always looking its best.`,
+  paragraph3: `With Eco-friendly products and a sharp focus on detail, 
+  we create cleaner, healthier environments for your team, clients and visitors. 
+  You handle your business- We will handle the clean.`
+}
+
 function displayServices() {
 
-  ourServices.innerHTML ='';
+  ourServices.innerHTML = '';
 
   const heading = document.createElement('h1');
   heading.textContent = 'Our Services';
@@ -161,3 +175,16 @@ function displayServices() {
 }
 
 displayServices();
+
+const aboutUs = document.querySelector('#about-us')
+
+function displayAboutUs() {
+  aboutUs.innerHTML = '';
+
+  const heading = document.createElement('h1');
+  heading.textContent = 'About Us';
+
+  aboutUs.append(heading);
+
+  const aboutUsContainer = document.createElement('div')
+}
