@@ -220,3 +220,28 @@ header {
     padding: 12px 40px;
     border-radius: 10px;
 }
+
+/*---------------- About Us Styling -------------------*/
+
+#about-us h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#about-us div {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#about-us div > div {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid var(--primaryColor);
+    border-radius: 0 20% 0 0;
+}
+
+#about-us div > div > img {
+    width: 110%;
+    height: 20rem;
+    border-radius: 0 20% 0 0;
+}

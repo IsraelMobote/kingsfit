@@ -180,32 +180,32 @@ displayServices();
 
 const aboutUs = document.querySelector('#about-us')
 
-function displayAboutUs() {
-  aboutUs.innerHTML = '';
+function displayAboutUs(element) {
+  element.innerHTML = '';
 
   const heading = document.createElement('h1');
   heading.textContent = 'About Us';
 
-  aboutUs.append(heading);
+  element.append(heading);
 
   const aboutUsContainer = document.createElement('div');
 
   const imageContainer = document.createElement('div');
   const img = document.createElement('img');
-  img.src = aboutUs.image;
-  img.alt = aboutUs.imageAlt;
+  img.src = aboutInfo.image;
+  img.alt = aboutInfo.imageAlt;
   img.loading = 'lazy';
 
   imageContainer.append(img);
 
   const paragraph1 = document.createElement('p')
-  paragraph1.textContent = aboutUs.paragraph1
+  paragraph1.textContent = aboutInfo.paragraph1
 
   const paragraph2 = document.createElement('p')
-  paragraph2.textContent = aboutUs.paragraph2
+  paragraph2.textContent = aboutInfo.paragraph2
 
   const paragraph3 = document.createElement('p')
-  paragraph3.textContent = aboutUs.paragraph3
+  paragraph3.textContent = aboutInfo.paragraph3
 
 
   aboutUsContainer.append(imageContainer);
@@ -214,6 +214,8 @@ function displayAboutUs() {
   aboutUsContainer.append(paragraph3);
   aboutUsContainer.append(paragraph1);
 
-  aboutUs.append(aboutUsContainer);
-  
+  element.append(aboutUsContainer);
+
 }
+
+displayAboutUs(aboutUs);
