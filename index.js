@@ -269,18 +269,58 @@ function displayAboutUs(element) {
 displayAboutUs(aboutUs);
 
 featuresList = {
-  mainImage: '',
+  mainImage: 'images/medium-shot-workers-with-cleaning-cart.webp',
+  mainImageAlt: '',
   features: [{
-    featureOneImage: '',
-    featureOneTitle: 'Happy Customers'
+    featureImage: 'images/ppp1.png',
+    featureAlt: '',
+    featureTitle: 'Happy Customers'
   },{
-    featureTwoImage: '',
-    featureTwoTitle: 'Flexible and Affordable Pricing'
+    featureImage: 'images/gggg1.png',
+    featureAlt: '',
+    featureTitle: 'Flexible and Affordable Pricing'
   },{
-    featureThreeImage: '',
-    featureThreeTitle: 'Diligent Cleaners'
+    featureImage: 'images/00023030.png',
+    featureAlt: '',
+    featureTitle: 'Diligent Cleaners'
   },{
-    featureFourImage: '',
-    featureFourTitle: 'Quality Cleaning Services'
+    featureImage: 'images/Untitled-1.png',
+    featureAlt: '',
+    featureTitle: 'Quality Cleaning Services'
   },]
 }
+
+const features = document.querySelector('#features');
+
+function displayFeatures(element) {
+  const img = document.createElement('img')
+  img.src = featuresList.mainImage
+  img.alt = featuresList.mainImageAlt
+  img.loading = 'lazy'
+
+  const featuresContainer = document.createElement('div')
+
+  featuresList.features.forEach(item => {
+
+    const featureInnerContainer = document.createElement('div')
+
+    const featureImage = document.createElement('img')
+    featureImage.src = item.featureImage
+    featureImage.alt = item.featureAlt
+    featureImage.loading = 'lazy'
+
+    const featureTitle = document.createElement('p')
+    featureTitle = item.featureTitle
+
+    featureInnerContainer.append(featureImage)
+    featureInnerContainer.append(featureTitle)
+
+    featuresContainer.append(featureInnerContainer)
+  });
+
+  element.append(img)
+  element.append(featuresContainer)
+  
+}
+
+displayFeatures(features);
