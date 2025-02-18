@@ -275,15 +275,15 @@ featuresList = {
     featureImage: 'images/ppp1.png',
     featureAlt: '',
     featureTitle: 'Happy Customers'
-  },{
+  }, {
     featureImage: 'images/gggg1.png',
     featureAlt: '',
     featureTitle: 'Flexible and Affordable Pricing'
-  },{
+  }, {
     featureImage: 'images/00023030.png',
     featureAlt: '',
     featureTitle: 'Diligent Cleaners'
-  },{
+  }, {
     featureImage: 'images/Untitled-1.png',
     featureAlt: '',
     featureTitle: 'Quality Cleaning Services'
@@ -313,7 +313,7 @@ function displayFeatures(element) {
     featureImage.alt = item.featureAlt
     featureImage.loading = 'lazy'
 
-    if(counterNumber === 3) {
+    if (counterNumber === 3) {
       featureImage.className = 'increaseSize'
     }
 
@@ -328,7 +328,7 @@ function displayFeatures(element) {
 
   element.append(img)
   element.append(featuresContainer)
-  
+
 }
 
 displayFeatures(features);
@@ -342,11 +342,14 @@ const form = document.querySelector('form');
 const submitButton = document.querySelector('#getInTouchSection button');
 
 function getEmailLink() {
-  console.log(Name.value)
+  const emailLink = Name.value
+  const emailMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message${Name.value} ${message.value}`
+  const newMessage = emailMessage.replaceAll(' ', '%20');
+  console.log(newMessage)
 }
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function (event) {
   event.preventDefault()
-  console.log(Name.value);
+  getEmailLink()
 });
 
