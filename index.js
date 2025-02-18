@@ -300,7 +300,11 @@ function displayFeatures(element) {
 
   const featuresContainer = document.createElement('div')
 
+  let counterNumber = 0
+
   featuresList.features.forEach(item => {
+
+    counterNumber += 1
 
     const featureInnerContainer = document.createElement('div')
 
@@ -308,6 +312,10 @@ function displayFeatures(element) {
     featureImage.src = item.featureImage
     featureImage.alt = item.featureAlt
     featureImage.loading = 'lazy'
+
+    if(counterNumber === 3) {
+      featureImage.className = 'increaseSize'
+    }
 
     const featureTitle = document.createElement('p')
     featureTitle.textContent = item.featureTitle
