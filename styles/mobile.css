@@ -295,6 +295,7 @@ header {
 #features {
     position: relative;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 #features > img {
