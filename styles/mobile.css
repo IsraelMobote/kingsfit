@@ -376,10 +376,16 @@ header {
 
 #getInTouchSection button {
     margin: 1.9rem auto;
-    padding: 15px 30px;
+    padding: 15px;
     border: 0;
-    color: white;
     background-color: var(--primaryColor);
     border-radius: 13px;
+}
+
+#getInTouchSection button a {
+    width: 100%;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
 }
 
