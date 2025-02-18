@@ -332,3 +332,21 @@ function displayFeatures(element) {
 }
 
 displayFeatures(features);
+
+const Name = document.querySelector('#name');
+
+const message = document.querySelector('#message');
+
+const form = document.querySelector('form');
+
+const submitButton = document.querySelector('#getInTouchSection button');
+
+function getEmailLink() {
+  console.log(Name.value)
+}
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault()
+  console.log(Name.value);
+});
+

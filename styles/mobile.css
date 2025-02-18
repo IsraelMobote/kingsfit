@@ -339,3 +339,47 @@ header {
     height: 100px;
     margin-bottom: 5px;
 }
+
+/*---------- Get In Touch Section Styling--------------*/
+
+#getInTouchSection h2{
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+#getInTouchSection input, #getInTouchSection label, textarea, button {
+    display: block;
+}
+
+#getInTouchSection form {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#getInTouchSection input, #getInTouchSection textarea {
+    width: 100%;
+    padding: 11px 15px;
+    margin: 9px 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #e4f4ff33;
+    border: 2px solid rgba(177, 172, 172, 0.61);
+}
+
+#getInTouchSection label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 23px;
+    margin-left: 22px;
+}
+
+#getInTouchSection button {
+    margin: 1.9rem auto;
+    padding: 15px 30px;
+    border: 0;
+    color: white;
+    background-color: var(--primaryColor);
+    border-radius: 13px;
+}
+
