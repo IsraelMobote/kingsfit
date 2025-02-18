@@ -279,7 +279,7 @@ header {
 
 #about-us .cleaningTypesContainer > div > img {
     width: 80%;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 #about-us .cleaningTypesContainer > div > p {
@@ -287,5 +287,5 @@ header {
     font-size: 0.65rem;
     font-weight: 200;
     line-height: 1.1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
