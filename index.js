@@ -339,20 +339,24 @@ const message = document.querySelector('#message');
 
 const form = document.querySelector('form');
 
-const submitButton = document.querySelector('#getInTouchSection button');
+const submitButtonLink = document.querySelector('button a');
 
 function getEmailLink() {
   const emailMessage = `${Name.value} ${message.value}`
   const newMessage = emailMessage.replaceAll(' ', '%20');
   const mainMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message&body=Hi%2C%0A%0A${newMessage}%0A%0AThank%20you`
   console.log(mainMessage)
+  
+  submitButtonLink.href = mainMessage;
+  console.log(submitButtonLink)
 
-  form.action = mainMessage.value;
 }
 
 form.addEventListener('submit', function (event) {
-  event.preventDefault()
-  getEmailLink()
+
+  event.preventDefault();
+ 
+  getEmailLink();
 });
 
 
