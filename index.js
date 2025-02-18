@@ -287,7 +287,7 @@ featuresList = {
     featureImage: 'images/Untitled-1.png',
     featureAlt: '',
     featureTitle: 'Quality Cleaning Services'
-  },]
+  }]
 }
 
 const features = document.querySelector('#features');
@@ -310,7 +310,7 @@ function displayFeatures(element) {
     featureImage.loading = 'lazy'
 
     const featureTitle = document.createElement('p')
-    featureTitle = item.featureTitle
+    featureTitle.textContent = item.featureTitle
 
     featureInnerContainer.append(featureImage)
     featureInnerContainer.append(featureTitle)
