@@ -394,9 +394,10 @@ header {
     margin: 0 auto;
 }
 
-#fumigatonAndRatting div > div {
+
+#fumigationAndRatting div > div {
     position: relative;
-    margin: 2rem auto;
+    margin-top: 5rem;
 }
 
 #fumigationAndRatting div > div > img:first-child {
