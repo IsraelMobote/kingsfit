@@ -342,7 +342,7 @@ header {
 
 /*---------- Get In Touch Section Styling--------------*/
 
-#getInTouchSection h2{
+#getInTouchSection h1{
     text-align: center;
     margin-bottom: 3.5rem;
 }
@@ -385,4 +385,24 @@ header {
 #getInTouchSection button a, #getInTouchSection button a:focus  {
     text-decoration: none;
     color: white;
+}
+
+/*--------------- Fumigation and Ratting Section ----------------*/
+
+#fumigationAndRatting > div {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#fumigatonAndRatting div > div {
+    position: relative;
+    margin: 2rem auto;
+}
+
+#fumigationAndRatting div > div > img:first-child {
+    position: absolute;
+    width: 20%;
+}
+#fumigationAndRatting div > img {
+    width: 100%;
 }

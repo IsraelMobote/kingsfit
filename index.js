@@ -356,4 +356,62 @@ form.addEventListener('submit', function (event) {
   getEmailLink();
 });
 
+const fumigationAndRattingSection = document.querySelector('#fumigationAndRatting');
+
+fumigationList = [{
+  cornerImage: 'images/image-of-rodents-in-diagram.webp',
+  cornerImageAlt: 'image of rodents in diagram',
+  fullImage: 'images/people-disinfecting-together-dangerous-area-wearing-white-overall-clothing.webp',
+  fullImageAlt: 'people disinfecting together dangerous area wearing white overall clothing',
+  body: `We offer the perfect selection of solutions to deal with; bed bugs, cockroaches,
+   mosquitoes, snakes, scorpions, bird-mites, rodent, insect or bird infestation.`
+},{
+  cornerImage: 'images/an-individual-disinfecting-a-room-wearing-a-white-overall-clothing.webp',
+  cornerImageAlt: 'an individual disinfecting a room wearing a white overall clothing',
+  fullImage: 'images/a-man-in-blue-outfit-and-wearing-a-face-mask-while-using-a-sprayer.webp',
+  fullImageAlt: 'a man in blue outfit and wearing a face mask while using a sprayer',
+  body: `We offer the perfect selection of solutions to deal with; bed bugs, cockroaches,
+   mosquitoes, snakes, scorpions, bird-mites, rodent, insect or bird infestation.`
+}]
+
+function displayFumigationSection(element) {
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Fumigation And Ratting'
+    const line = document.createElement('hr')
+
+    element.append(h1)
+    element.append(line)
+
+    const fumigationSectionContainer = document.createElement('div');
+
+    fumigationList.forEach(item => {
+      const innerSectionContainer = document.createElement('div');
+
+      const cornerImage = document.createElement('img')
+      cornerImage.src = item.cornerImage
+      cornerImage.alt = item.cornerImageAlt
+      cornerImage.loading = 'lazy'
+
+      const fullImage = document.createElement('img')
+      fullImage.src = item.fullImage
+      fullImage.alt = item.fullImageAlt
+      fullImage.loading = 'lazy'
+
+      const body = document.createElement('p')
+      body.textContent = item.body
+
+      innerSectionContainer.append(cornerImage)
+      innerSectionContainer.append(fullImage)
+      innerSectionContainer.append(body)
+
+      fumigationSectionContainer.append(innerSectionContainer);
+    });
+
+
+    element.append(fumigationSectionContainer)
+
+}
+
+displayFumigationSection(fumigationAndRattingSection);
+
 
