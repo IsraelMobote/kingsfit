@@ -346,7 +346,8 @@ function getEmailLink() {
   const Name = document.querySelector('#name');
   const message = document.querySelector('#message');
 
-  const emailMessage = `My name is ${Name.value}, ${message.value}`
+  let emailMessage = ''
+  emailMessage = `My name is ${Name.value}, ${message.value}`
   const newMessage = emailMessage.replaceAll(' ', '%20');
   const mainMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message&body=Hi%2C%0A%0A${newMessage}%0A%0AThank%20you`
 
