@@ -343,8 +343,11 @@ const form = document.querySelector('form');
 const submitButtonLink = document.querySelector('button a');
 
 function getEmailLink() {
-  const Name = document.querySelector('#name');
-  const message = document.querySelector('#message');
+  let Name = ''
+  Name = document.querySelector('#name');
+
+  let message = ''
+  message = document.querySelector('#message');
 
   let emailMessage = ''
   emailMessage = `My name is ${Name.value}, ${message.value}`
