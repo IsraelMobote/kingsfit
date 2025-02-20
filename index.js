@@ -293,12 +293,17 @@ featuresList = {
 const features = document.querySelector('#features');
 
 function displayFeatures(element) {
+
+  const heading = document.createElement('h1')
+  heading.textContent = 'Our Features'
+
   const img = document.createElement('img')
   img.src = featuresList.mainImage
   img.alt = featuresList.mainImageAlt
   img.loading = 'lazy'
 
   const featuresContainer = document.createElement('div')
+  featuresContainer.append(heading)
 
   let counterNumber = 0
 
