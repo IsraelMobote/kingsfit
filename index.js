@@ -374,7 +374,7 @@ fumigationList = [{
   fullImageAlt: 'people disinfecting together dangerous area wearing white overall clothing',
   body: `We offer the perfect selection of solutions to deal with; bed bugs, cockroaches,
    mosquitoes, snakes, scorpions, bird-mites, rodent, insect or bird infestation.`
-},{
+}, {
   cornerImage: 'images/an-individual-disinfecting-a-room-wearing-a-white-overall-clothing.webp',
   cornerImageAlt: 'an individual disinfecting a room wearing a white overall clothing',
   fullImage: 'images/a-man-in-blue-outfit-and-wearing-a-face-mask-while-using-a-sprayer.webp',
@@ -384,43 +384,95 @@ fumigationList = [{
 }]
 
 function displayFumigationSection(element) {
-    const h1 = document.createElement('h1');
-    h1.textContent = 'Fumigation And Ratting'
-    const line = document.createElement('hr')
+  const h1 = document.createElement('h1');
+  h1.textContent = 'Fumigation And Ratting'
+  const line = document.createElement('hr')
 
-    element.append(h1)
-    element.append(line)
+  element.append(h1)
+  element.append(line)
 
-    const fumigationSectionContainer = document.createElement('div');
+  const fumigationSectionContainer = document.createElement('div');
 
-    fumigationList.forEach(item => {
-      const innerSectionContainer = document.createElement('div');
+  fumigationList.forEach(item => {
+    const innerSectionContainer = document.createElement('div');
 
-      const cornerImage = document.createElement('img')
-      cornerImage.src = item.cornerImage
-      cornerImage.alt = item.cornerImageAlt
-      cornerImage.loading = 'lazy'
+    const cornerImage = document.createElement('img')
+    cornerImage.src = item.cornerImage
+    cornerImage.alt = item.cornerImageAlt
+    cornerImage.loading = 'lazy'
 
-      const fullImage = document.createElement('img')
-      fullImage.src = item.fullImage
-      fullImage.alt = item.fullImageAlt
-      fullImage.loading = 'lazy'
+    const fullImage = document.createElement('img')
+    fullImage.src = item.fullImage
+    fullImage.alt = item.fullImageAlt
+    fullImage.loading = 'lazy'
 
-      const body = document.createElement('p')
-      body.textContent = item.body
+    const body = document.createElement('p')
+    body.textContent = item.body
 
-      innerSectionContainer.append(cornerImage)
-      innerSectionContainer.append(fullImage)
-      innerSectionContainer.append(body)
+    innerSectionContainer.append(cornerImage)
+    innerSectionContainer.append(fullImage)
+    innerSectionContainer.append(body)
 
-      fumigationSectionContainer.append(innerSectionContainer);
-    });
+    fumigationSectionContainer.append(innerSectionContainer);
+  });
 
 
-    element.append(fumigationSectionContainer)
+  element.append(fumigationSectionContainer)
 
 }
 
 displayFumigationSection(fumigationAndRattingSection);
 
 
+FAQs = [{
+  question: "IS A LONG TERM CONTRACT REQUIRED FOR SERVICE?",
+  answer: "King's fit cleaning services for homes and workspace"
+}, {
+  question: "CAN I TRUST YOUR CLEANERS?",
+  answer: "King's fit cleaning services for homes and workspace"
+}, {
+  question: "WHAT SHOULD I EXPECT FROM YOUR CLEANERS",
+  answer: "King's fit cleaning services for homes and workspace"
+}, {
+  question: "HOW DO I GET STARTED?",
+  answer: "King's fit cleaning services for homes and workspace"
+}, {
+  question: "WHY DO WE STAND BEHIND OUR WORK?",
+  answer: "King's fit cleaning services for homes and workspace"
+}, {
+  question: "WHAT IS OUR HOME CLEANING PROCESS?",
+  answer: "King's fit cleaning services for homes and workspace"
+}];
+
+const FAQsContainer = document.querySelector('#frequent-asked-questions');
+
+function displayFAQs(list) {
+  list.forEach(element => {
+    const quesAndAnswerContainer = document.createElement('div')
+
+    const questionContainer = document.createElement('div')
+    const question = document.createElement('p')
+    question.textContent = element.question
+
+    const sign = document.createElement('span')
+    sign.textContent = "➕"
+
+    const answer = document.createElement('p')
+    answer.textContent = element.answer
+
+    sign.addEventListener('click', function () {
+      sign.classList.toggle('changeTextContent')
+      answer.classList.toggle('active')
+    })
+
+    questionContainer.append(question)
+    questionContainer.append(sign)
+
+    quesAndAnswerContainer.append(questionContainer)
+    quesAndAnswerContainer.append(answer)
+
+    FAQsContainer.append(quesAndAnswerContainer);
+  });
+}
+
+displayFAQs(FAQs);
