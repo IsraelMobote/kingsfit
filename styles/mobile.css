@@ -469,7 +469,7 @@ header {
     justify-content: space-between;
 }
 
-#frequent-asked-questions > div > div > p {
+#frequent-asked-questions > div > div:first-child > p {
     font-size: 0.68rem;
     font-weight: 800;
     padding-left: 3px;
@@ -496,15 +496,18 @@ header {
 }
 
 /*the styling below is the styling for the answer line of the frequent-asked-questions*/
-#frequent-asked-questions > div > p {
-    font-size: 0.9rem;
+#frequent-asked-questions > div > .answerContainer {
     display: grid;
     grid-template-rows: 0fr;
-    overflow: auto;
 }
 
-#frequent-asked-questions > div > p.active {
-    overflow-y: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
+#frequent-asked-questions > div > .answerContainer > p {
+    overflow: hidden;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#frequent-asked-questions > div > .answerContainer.active {
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.4s ease-out;
 }

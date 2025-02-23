@@ -456,21 +456,25 @@ function displayFAQs(list) {
 
     const sign = document.createElement('span')
 
+    const answerContainer = document.createElement('div')
+    answerContainer.className = 'answerContainer'
+
     const answer = document.createElement('p')
     answer.textContent = element.answer
+    answerContainer.append(answer)
 
     sign.addEventListener('click', function () {
       sign.classList.toggle('changeTextContent')
       sign.textContent = ""
 
-      answer.classList.toggle('active')
+      answerContainer.classList.toggle('active')
     })
 
     questionContainer.append(question)
     questionContainer.append(sign)
 
     quesAndAnswerContainer.append(questionContainer)
-    quesAndAnswerContainer.append(answer)
+    quesAndAnswerContainer.append(answerContainer)
 
     FAQsContainer.append(quesAndAnswerContainer);
   });
