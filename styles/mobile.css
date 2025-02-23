@@ -447,3 +447,64 @@ header {
     line-height: 1.1rem;
     margin: 1.5rem 0 3rem;
 }
+
+/*------------- FAQs Styling -------------*/
+
+#frequent-asked-questions {
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#frequent-asked-questions > div {
+    background-color: #bad3e960;
+    padding: 0.6rem;
+    margin: 1rem 0;
+    border-left: 10px solid #0067C8;
+    border-radius: 8px;
+}
+
+#frequent-asked-questions > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#frequent-asked-questions > div > div > p {
+    font-size: 0.68rem;
+    font-weight: 800;
+    padding-left: 3px;
+    display: inline;
+    align-self: center;
+}
+
+#frequent-asked-questions > div > div > span {
+    align-self: center;
+    position: relative;
+    bottom: 5px;
+    padding-right: 8px;
+}
+
+
+#frequent-asked-questions > div > div > span::before {
+    content: "+";
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+#frequent-asked-questions > div > div > span.changeTextContent::before {
+    content: "-";
+}
+
+/*the styling below is the styling for the answer line of the frequent-asked-questions*/
+#frequent-asked-questions > div > p {
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: auto;
+}
+
+#frequent-asked-questions > div > p.active {
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+}

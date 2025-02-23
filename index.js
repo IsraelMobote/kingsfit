@@ -455,13 +455,14 @@ function displayFAQs(list) {
     question.textContent = element.question
 
     const sign = document.createElement('span')
-    sign.textContent = "➕"
 
     const answer = document.createElement('p')
     answer.textContent = element.answer
 
     sign.addEventListener('click', function () {
       sign.classList.toggle('changeTextContent')
+      sign.textContent = ""
+
       answer.classList.toggle('active')
     })
 
