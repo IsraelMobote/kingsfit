@@ -453,13 +453,15 @@ header {
 .FAQs h2 {
     width: 50%;
     text-align: center;
-    margin: 2rem auto;
+    margin: 3rem auto 2rem;
     font-size: 1.2rem;
 }
 
 .FAQs > hr {
     width: 80%;
     margin: 0 auto 1.1rem;
+    padding: 0.5px;
+    background-color: #0067C8;
 }
 
 .FAQs > p {
@@ -467,6 +469,13 @@ header {
     text-align: center;
     width: 90%;
     margin: 0 auto;
+}
+
+.FAQs > ul {
+    width: 75%;
+    margin: 2.5rem auto;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
 }
 
 #frequent-asked-questions {
