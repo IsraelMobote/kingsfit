@@ -509,5 +509,5 @@ header {
 
 #frequent-asked-questions > div > .answerContainer.active {
     grid-template-rows: 1fr;
-    transition: grid-template-rows 0.4s ease-out;
+    transition: grid-template-rows 0.6s ease-out;
 }
