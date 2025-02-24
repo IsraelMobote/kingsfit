@@ -450,6 +450,25 @@ header {
 
 /*------------- FAQs Styling -------------*/
 
+.FAQs h2 {
+    width: 50%;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+}
+
+.FAQs > hr {
+    width: 80%;
+    margin: 0 auto 1.1rem;
+}
+
+.FAQs > p {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
 #frequent-asked-questions {
     width: 85%;
     margin: 0 auto;
