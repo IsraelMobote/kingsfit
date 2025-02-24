@@ -458,7 +458,7 @@ header {
 
 #frequent-asked-questions > div {
     background-color: #bad3e960;
-    padding: 0.6rem;
+    padding: 0.8rem 10px;
     margin: 1rem 0;
     border-left: 10px solid #0067C8;
     border-radius: 8px;
