@@ -55,6 +55,34 @@ header {
 
 /*---------  the Hero Image styling  --------*/
 
+.menuItems {
+    justify-self: flex-end;
+    width: 60%;
+    height: 90vh;
+    font-size: 0.8rem;
+    color: var(--primaryColor);
+    background-color: rgb(245, 246, 247);
+    backdrop-filter: grey;
+    padding-top: 40px;
+}
+
+.menuItems > p {
+    margin: 1.7rem 0 1.7rem 44px;
+}
+
+.menuItems > p:last-child {
+    width: fit-content;
+    padding: 10px 15px;
+    margin-left: 30px;
+    border: 1.7px solid var(--primaryColor);
+    border-radius: 10px;
+}
+
+.menuItems > p > a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
 .heroImage {
     position: relative;
     padding: 25px auto;
