@@ -9,7 +9,7 @@
 :root {
     --primaryFont : 'Inter', Helvetica, sans-serif;
     --backgroundColor: #e4f4ff70;
-    --primaryColor: #0067C8;
+    --primaryColor: #0f81ec;
     --secondaryColor: #000000;
     --tertiaryColor: #D9D9D9;
 }
@@ -453,13 +453,13 @@ header {
 .FAQs h2 {
     width: 50%;
     text-align: center;
-    margin: 3rem auto 2rem;
+    margin: 3rem auto 1.9rem;
     font-size: 1.2rem;
 }
 
 .liner {
     width: 80%;
-    margin: 0 auto 1.1rem;
+    margin: 1.5rem auto;
     padding: 0.5px;
     background-color: #0d86f7;
 }
@@ -488,7 +488,7 @@ header {
     background-color: #bad3e960;
     padding: 0.8rem 10px;
     margin: 1rem 0;
-    border-left: 10px solid #0067C8;
+    border-left: 10px solid var(--primaryColor);
     border-radius: 8px;
 }
 
@@ -545,4 +545,21 @@ header {
 footer {
     background-color: #bad3e960;
     border-bottom: 60px solid var(--primaryColor);
+    margin-top: 7.5rem;
+    padding-top: 5rem;
+}
+
+footer > p {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 0.65rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+footer > .headingInFooter {
+    font-size: 0.87rem;
+    font-weight: 800;
+    margin-bottom: 0.95rem;
 }
