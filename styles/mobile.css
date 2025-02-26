@@ -28,8 +28,13 @@ header {
     text-align: right;
     padding: 1rem 2rem 1rem 1rem;
     box-shadow: 0 3px 3px 3px var(--tertiaryColor);
-    background-color: transparent;
     z-index: 5;
+    background-color: white;
+}
+
+header.active {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .container {
