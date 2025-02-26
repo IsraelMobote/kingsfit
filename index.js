@@ -7,8 +7,10 @@ const menuBarsContainer = document.querySelector('.container');
 const menuItemsContainer = document.querySelector('.menuItemsContainer');
 const menuItems = document.querySelector('.menuItems');
 const body = document.querySelector('body');
+const header = document.querySelector('header');
 
 menuBarsContainer.addEventListener('click', function () {
+  header.classList.toggle('active')
   menuItems.classList.toggle('active')
   menuItemsContainer.classList.toggle('active')
   body.classList.toggle('active')

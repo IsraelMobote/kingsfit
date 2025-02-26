@@ -22,17 +22,24 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     text-align: right;
     padding: 1rem 2rem 1rem 1rem;
     box-shadow: 0 3px 3px 3px var(--tertiaryColor);
     background-color: white;
-    z-index: 2;
+    z-index: 4;
+}
+
+header.active {
+    box-shadow: none;
 }
 
 .container {
     display: inline-block;
+    position: relative;
+    right: 45px;
     cursor: pointer;
 }
 
@@ -90,7 +97,7 @@ body.active {
 .menuItems {
     justify-self: flex-end;
     width: 70%;
-    height: 90vh;
+    height: 100vh;
     font-size: 0.8rem;
     color: var(--primaryColor);
     background-color: white;
@@ -121,6 +128,10 @@ body.active {
     margin: 1.7rem 0 1.7rem 44px;
 }
 
+.menuItems > p:first-child {
+    margin-top: 7rem;
+}
+
 .menuItems > p:last-child {
     width: fit-content;
     padding: 10px 15px;
@@ -137,6 +148,7 @@ body.active {
 .heroImage {
     position: relative;
     padding: 25px auto;
+    border-top: 6rem solid white;
 
 }
 
@@ -153,6 +165,7 @@ body.active {
 .heroImage .herotext-container {
     margin-top: 1rem;
     position: relative;
+    top: -1rem;
     width: 100%;
     height: 29rem;
     background-color: rgba(0, 0, 0, 0.253);
