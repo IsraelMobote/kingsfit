@@ -68,16 +68,18 @@ main {
 }
 
 .menuItemsContainer {
-    display: none;
+    display: block;
+    position: fixed;
+    margin-top: -1rem;
+    opacity: 0;
+    transition: opacity 0.6s;
 }
 
 .menuItemsContainer.active {
-    display: block;
     width: 100%;
-    position: fixed;
-    margin-top: -1rem;
     background-color: #3333339c;
     z-index: 3;
+    opacity: 1;
 }
 
 .menuItems {
@@ -88,6 +90,26 @@ main {
     color: var(--primaryColor);
     background-color: white;
     padding-top: 40px;
+    opacity: 0;
+}
+
+.menuItems.active {
+    animation: moveIn 0.6s ease-in;
+    opacity: 1;
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 .menuItems > p {

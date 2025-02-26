@@ -7,9 +7,9 @@ const menuBarsContainer = document.querySelector('.container');
 const menuItemsContainer = document.querySelector('.menuItemsContainer');
 const menuItems = document.querySelector('.menuItems');
 
-menuBarsContainer.addEventListener('click', function() {
-  menuItemsContainer.classList.toggle('active')
+menuBarsContainer.addEventListener('click', function () {
   menuItems.classList.toggle('active')
+  menuItemsContainer.classList.toggle('active')
 })
 
 sliderData = [
