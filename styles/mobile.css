@@ -460,8 +460,7 @@ header {
 .liner {
     width: 80%;
     margin: 1.5rem auto;
-    padding: 0.5px;
-    background-color: #0d86f7;
+    border-bottom: 2px solid var(--primaryColor);
 }
 
 .FAQs > p {
