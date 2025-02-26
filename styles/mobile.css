@@ -82,6 +82,11 @@ main {
     opacity: 1;
 }
 
+body.active {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .menuItems {
     justify-self: flex-end;
     width: 70%;

@@ -6,10 +6,12 @@ function myFunction(x) {
 const menuBarsContainer = document.querySelector('.container');
 const menuItemsContainer = document.querySelector('.menuItemsContainer');
 const menuItems = document.querySelector('.menuItems');
+const body = document.querySelector('body');
 
 menuBarsContainer.addEventListener('click', function () {
   menuItems.classList.toggle('active')
   menuItemsContainer.classList.toggle('active')
+  body.classList.toggle('active')
 })
 
 sliderData = [
