@@ -17,10 +17,18 @@
 
 /*---------  the menu icon styling  --------*/
 
+body {
+    position: relative;
+}
+
 header {
+    position: sticky;
+    top: 0;
     text-align: right;
     padding: 1rem 2rem 1rem 1rem;
     box-shadow: 0 3px 3px 3px var(--tertiaryColor);
+    background-color: white;
+    z-index: 2;
 }
 
 .container {
@@ -55,14 +63,25 @@ header {
 
 /*---------  the Hero Image styling  --------*/
 
+main {
+    position: relative;
+}
+
+.menuItemsContainer {
+    width: 100%;
+    position: fixed;
+    margin-top: -1rem;
+    background-color: #3333339c;
+    z-index: 3;
+}
+
 .menuItems {
     justify-self: flex-end;
     width: 60%;
     height: 90vh;
     font-size: 0.8rem;
     color: var(--primaryColor);
-    background-color: rgb(245, 246, 247);
-    backdrop-filter: grey;
+    background-color: white;
     padding-top: 40px;
 }
 
