@@ -273,9 +273,13 @@ body.active {
     }
 }
 
+#our-services {
+    padding-top: 6rem;
+}
+
 #our-services h1 {
     font-size: 2rem;
-    margin: 5rem 0 3rem;
+    margin: 0 0 3rem;
 }
 
 #our-services div {
@@ -315,10 +319,14 @@ body.active {
 
 /*---------------- About Us Styling -------------------*/
 
+#about-us {
+    padding-top: 6rem;
+}
+
 #about-us h1 {
     font-weight: 900;
     text-align: center;
-    margin: 8rem auto 3rem;
+    margin: 0 auto 3rem;
 }
 
 #about-us > div {
@@ -444,9 +452,13 @@ body.active {
 
 /*---------- Get In Touch Section Styling--------------*/
 
+#getInTouchSection {
+    padding-top: 6rem;
+}
+
 #getInTouchSection h1{
     text-align: center;
-    margin: 4rem auto 3.1rem;
+    margin: 0 auto 3.1rem;
 }
 
 #getInTouchSection input, #getInTouchSection label, textarea, button {

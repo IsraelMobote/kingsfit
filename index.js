@@ -16,6 +16,22 @@ menuBarsContainer.addEventListener('click', function () {
   body.classList.toggle('active')
 })
 
+const anchorTagsInMenu = document.querySelectorAll('.menuItems p a');
+
+const container = document.querySelector('.container');
+
+anchorTagsInMenu.forEach(element => {
+    element.addEventListener('click', function() {
+
+      myFunction(container)
+      header.classList.toggle('active')
+      menuItems.classList.toggle('active')
+      menuItemsContainer.classList.toggle('active')
+      body.classList.toggle('active')
+
+    })
+});
+
 sliderData = [
   {
     picture: "images/picture-of-alot-of-people-cleaning.webp",
