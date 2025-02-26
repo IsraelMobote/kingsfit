@@ -24,7 +24,6 @@ body {
 header {
     position: fixed;
     width: 100%;
-    top: 0;
     text-align: right;
     padding: 1rem 2rem 1rem 1rem;
     box-shadow: 0 3px 3px 3px var(--tertiaryColor);
