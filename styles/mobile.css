@@ -84,7 +84,7 @@ main {
 
 .menuItems {
     justify-self: flex-end;
-    width: 60%;
+    width: 70%;
     height: 90vh;
     font-size: 0.8rem;
     color: var(--primaryColor);
