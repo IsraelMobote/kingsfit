@@ -68,6 +68,11 @@ main {
 }
 
 .menuItemsContainer {
+    display: none;
+}
+
+.menuItemsContainer.active {
+    display: block;
     width: 100%;
     position: fixed;
     margin-top: -1rem;

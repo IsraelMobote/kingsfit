@@ -3,6 +3,15 @@ function myFunction(x) {
   x.classList.toggle("change");
 }
 
+const menuBarsContainer = document.querySelector('.container');
+const menuItemsContainer = document.querySelector('.menuItemsContainer');
+const menuItems = document.querySelector('.menuItems');
+
+menuBarsContainer.addEventListener('click', function() {
+  menuItemsContainer.classList.toggle('active')
+  menuItems.classList.toggle('active')
+})
+
 sliderData = [
   {
     picture: "images/picture-of-alot-of-people-cleaning.webp",
