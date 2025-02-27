@@ -226,8 +226,14 @@ body.active {
     font-size: 0.8rem;
     line-height: 1.7rem;
     padding: 15px 10px;
-    background-image: linear-gradient( to right, #6f9cc733, white);
-    margin: auto 0;;''
+    background-image: linear-gradient( to right, #0f81ec1a, white);
+    margin: auto 0;
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+
+#actualSlider > p.fade-away {
+    opacity: 0.3;
 }
 
 .sliderSection> .sliderIcons p {

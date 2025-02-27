@@ -93,6 +93,7 @@ secondIcon.addEventListener('click', function () {
 
 function setSlider() {
   if (slidertrackingNumber == 0) {
+
     sliderImage.classList.add('fade-away')
     sliderText.classList.add('fade-away')
     setTimeout(() => {
@@ -110,6 +111,7 @@ function setSlider() {
   else if (slidertrackingNumber == 1) {
 
     sliderImage.classList.add('fade-away')
+    sliderText.classList.add('fade-away')
     setTimeout(() => {
       populateSlider(sliderData[1]);
     }, 250);
@@ -125,6 +127,7 @@ function setSlider() {
   else if (slidertrackingNumber == 2) {
 
     sliderImage.classList.add('fade-away')
+    sliderText.classList.add('fade-away')
     setTimeout(() => {
       populateSlider(sliderData[2]);
     }, 250);
