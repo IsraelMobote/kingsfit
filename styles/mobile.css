@@ -204,7 +204,7 @@ body.active {
 }
 #actualSlider {
     width: 90%;
-    height: 17rem;
+    height: 12rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 4rem auto 1rem;
@@ -223,7 +223,7 @@ body.active {
 }
 
 #actualSlider > p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.7rem;
     padding: 0 10px;
     background-image: linear-gradient( to right, #0f81ec1a, white);

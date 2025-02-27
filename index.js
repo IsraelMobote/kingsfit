@@ -36,22 +36,17 @@ sliderData = [
   {
     picture: "images/picture-of-mobile-cleaning-facilities.webp",
     text: `maintain a clean an hygienic workspace
-     environment with our janitorial services, 
-     we provide regular cleaning and adequate facilities management`
+     environment with our janitorial services`
   },
   {
     picture: "images/picture-of-alot-of-people-cleaning.webp",
     text: `Keep your floors looking their best with the best
-     floor maintenance services. We offer a variety of services,
-      including carpet cleaning, hard floor cleaning, and floor waxing, 
-      to extend the life of your floors and maintain their shine`
+     floor maintenance services`
   },
   {
     picture: "images/picture-someone-cleaning-with-mop-and-bucket.webp",
     text: `Eliminate germs and bacteria with our 
-    deep-cleaning steamer sanitization services. 
-    Our high-pressure steam penetrates deep into surfaces, 
-    killing bacteria, mold, and dust mites, leaving your space clean and sanitized`
+    deep-cleaning steamer sanitization services`
   }
 ]
 const actualSlider = document.querySelector('#actualSlider');
