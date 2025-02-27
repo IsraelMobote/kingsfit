@@ -34,38 +34,38 @@ anchorTagsInMenu.forEach(element => {
 
 sliderData = [
   {
+    picture: "images/picture-of-mobile-cleaning-facilities.webp",
+    text: `maintain a clean an hygienic workspace
+     environment with our janitorial services, 
+     we provide regular cleaning and adequate facilities management`
+  },
+  {
     picture: "images/picture-of-alot-of-people-cleaning.webp",
-    text: "maintain a clean an hygienic workspace environment with our janitorial services, we provide regular cleaning and adequate facilities management"
+    text: `Keep your floors looking their best with the best
+     floor maintenance services. We offer a variety of services,
+      including carpet cleaning, hard floor cleaning, and floor waxing, 
+      to extend the life of your floors and maintain their shine`
   },
   {
     picture: "images/picture-someone-cleaning-with-mop-and-bucket.webp",
-    text: "maintain a clean an hygienic workspace environment with our janitorial services, we provide regular cleaning and adequate facilities management"
-  },
-  {
-    picture: "images/picture-of-mobile-cleaning-facilities.webp",
-    text: "maintain a clean an hygienic workspace environment with our janitorial services, we provide regular cleaning and adequate facilities management"
+    text: `Eliminate germs and bacteria with our 
+    deep-cleaning steamer sanitization services. 
+    Our high-pressure steam penetrates deep into surfaces, 
+    killing bacteria, mold, and dust mites, leaving your space clean and sanitized`
   }
 ]
 const actualSlider = document.querySelector('#actualSlider');
+let sliderImage = document.querySelector('#actualSlider img');
+let sliderText = document.querySelector('#actualSlider p');
 
 function populateSlider(element) {
-  actualSlider.innerHTML = ""
-  const image = document.createElement('img');
-  image.setAttribute('src', `${element.picture}`);
-  image.setAttribute('loading', 'lazy')
+ 
+  sliderImage.setAttribute('src', `${element.picture}`);
+  sliderImage.setAttribute('loading', 'lazy')
+  sliderImage.classList.remove('fade-away');
 
-  const text = document.createElement('p');
-  text.textContent = element.text;
-
-  if (slidertrackingNumber === 1) {
-    actualSlider.append(text)
-    actualSlider.append(image)
-  }
-  else {
-    actualSlider.append(image);
-    actualSlider.append(text);
-
-  }
+  sliderText.textContent = element.text;
+  sliderText.classList.remove('fade-away');
 
 }
 
@@ -93,7 +93,12 @@ secondIcon.addEventListener('click', function () {
 
 function setSlider() {
   if (slidertrackingNumber == 0) {
-    populateSlider(sliderData[0]);
+    sliderImage.classList.add('fade-away')
+    sliderText.classList.add('fade-away')
+    setTimeout(() => {
+      populateSlider(sliderData[0]);
+    }, 250);
+
 
     firstIcon.classList.add('hide');
 
@@ -103,7 +108,11 @@ function setSlider() {
   }
 
   else if (slidertrackingNumber == 1) {
-    populateSlider(sliderData[1]);
+
+    sliderImage.classList.add('fade-away')
+    setTimeout(() => {
+      populateSlider(sliderData[1]);
+    }, 250);
 
     firstIcon.classList.remove('hide');
     secondIcon.classList.remove('hide');
@@ -114,7 +123,11 @@ function setSlider() {
   }
 
   else if (slidertrackingNumber == 2) {
-    populateSlider(sliderData[2]);
+
+    sliderImage.classList.add('fade-away')
+    setTimeout(() => {
+      populateSlider(sliderData[2]);
+    }, 250);
 
     secondIcon.classList.add('hide');
 
