@@ -21,15 +21,15 @@ const anchorTagsInMenu = document.querySelectorAll('.menuItems p a');
 const container = document.querySelector('.container');
 
 anchorTagsInMenu.forEach(element => {
-    element.addEventListener('click', function() {
+  element.addEventListener('click', function () {
 
-      myFunction(container)
-      header.classList.toggle('active')
-      menuItems.classList.toggle('active')
-      menuItemsContainer.classList.toggle('active')
-      body.classList.toggle('active')
+    myFunction(container)
+    header.classList.toggle('active')
+    menuItems.classList.toggle('active')
+    menuItemsContainer.classList.toggle('active')
+    body.classList.toggle('active')
 
-    })
+  })
 });
 
 sliderData = [
@@ -57,12 +57,18 @@ function populateSlider(element) {
   const text = document.createElement('p');
   text.textContent = element.text;
 
-  actualSlider.append(image);
-  actualSlider.append(text);
+  if (slidertrackingNumber === 1) {
+    actualSlider.append(text)
+    actualSlider.append(image)
+  }
+  else {
+    actualSlider.append(image);
+    actualSlider.append(text);
+
+  }
 
 }
 
-populateSlider(sliderData[2]);
 
 const firstIcon = document.querySelector('#firstIcon');
 const secondIcon = document.querySelector('#secondIcon');

@@ -222,13 +222,13 @@ body.active {
 }
 
 .sliderSection> .sliderIcons p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 900;
     position: absolute;
     top: 45%;
     right: 3%;
     width: fit-content;
-    padding: 3px 7px;
+    padding: 5px 5px 5px 9px;
     background-color: white;
     border-radius: 50%;
     box-shadow: 3px 3px 3px grey;
@@ -239,10 +239,9 @@ body.active {
 }
 
 .sliderSection> .sliderIcons p:first-child {
-    font-size: 15px;
-    font-weight: 900;
     position: absolute;
     left: 3%;
+    padding: 3px 7px 3px 3px;
 }
 
 .sliderWayCircles {
