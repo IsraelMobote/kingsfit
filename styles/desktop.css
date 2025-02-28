@@ -5,36 +5,102 @@
         margin: 0;
         font-family: var(--primaryFont);
     }
-    
+
     :root {
-        --primaryFont : 'Inter', Helvetica, sans-serif;
+        --primaryFont: 'Inter', Helvetica, sans-serif;
         --backgroundColor: #e4f4ff70;
         --primaryColor: #0067C8;
         --secondaryColor: #000000;
         --tertiaryColor: #D9D9D9;
     }
-    
+
     .container {
         display: none;
     }
 
-    .headerItems {
-        display: flex;
-        width: 40%;
-        justify-content: space-between;
+    header {
+        padding: 20px 0 30px;
+        box-shadow: 0 4px 4px rgba(190, 183, 183, 0.452);
+        background-color: white;
     }
 
-    .headerItems > p:last-child {
+    .headerItems {
+        position: relative;
+        left: 35%;
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerItems>p {
+        align-content: baseline;
+    }
+
+    .headerItems>p:last-child {
         font-size: 0.85rem;
         color: var(--primaryColor);
-        padding: 8px;
+        padding: 5px 10px;
         border: 1.5px solid var(--primaryColor);
         border-radius: 8px;
+
     }
 
-    .headerItems > p > a {
+    .headerItems>p:last-child>img {
+        width: 20px;
+    }
+
+    .headerItems>p:last-child>span {
+        position: relative;
+        bottom: 5px;
+        width: 20px;
+        margin: auto 0;
+        padding: 0 3px 0 12px;
+    }
+
+    .headerItems>p>a {
         font-size: 0.85rem;
         text-decoration: none;
         color: var(--primaryColor);
+    }
+
+    /*------------- Hero Image Styling --------------*/
+    .heroImage {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .heroImage img {
+        margin: 1rem auto;
+        border-radius: 45px;
+        height: 490px;
+        filter: brightness(120%);
+    }
+
+    .heroImage>.herotext-container {
+        position: relative;
+        margin: 2rem auto;
+        border-radius: 45px;
+        background-color: rgba(0, 0, 0, 0.267);
+        height: 490px
+    }
+
+    .heroText {
+        width: 48%;
+        position: absolute;
+        top: 50px;
+        padding-top: 60px;
+        backdrop-filter: blur(6px);
+        background-color: rgba(241, 236, 236, 0.247);
+    }
+
+    .heroText>.bolder {
+        width: 100%;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+
+    .heroText>p {
+        width: 80%;
     }
 }

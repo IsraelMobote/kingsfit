@@ -169,7 +169,6 @@ body.active {
     width: 100%;
     height: 29rem;
     background-color: rgba(0, 0, 0, 0.253);
-    background-image: rgb(118, 156, 156);
 }
 .heroText {
     height: fit-content;
