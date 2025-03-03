@@ -190,6 +190,7 @@
 .sliderWayCircles > p {
     margin: 0 5px;
     padding: 6px 8px;
+    background-color: #a3a0a0;;
 }
 
 .sliderWayCircles > p.active {
