@@ -103,4 +103,46 @@
     .heroText>p {
         width: 80%;
     }
+
+
+    .hero-image-icons {
+        position: relative;
+        bottom: 7.7rem;
+        display: flex;
+        justify-content: space-evenly;
+        width: 85%;
+        margin: 2rem auto 1rem;
+        padding: 3rem 0;
+        backdrop-filter: blur(6px);
+        background-color: rgba(255, 255, 255, 0.699);
+        border-radius: 40px;
+        box-shadow: 0 4px 8px rgba(128, 128, 128, 0.514);
+    }
+
+    .hero-image-icons > div {
+      width: 120px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image-icons > div > img {
+        position: relative;
+        top: 0;
+        width: 80%;
+        height: 90px;
+        margin: 0;
+        background-color: transparent;
+        border-radius: 30px;
+    }
+
+    .hero-image-icons > .hero-icon-div > p {
+        position: relative;
+        bottom: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    
 }

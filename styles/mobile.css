@@ -214,6 +214,10 @@ body.active {
     line-height: 2;
 }
 
+.hero-image-icons {
+    display: none;
+}
+
 /*------- slider section styling --------*/
 .sliderSection {
     position: relative;
