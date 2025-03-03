@@ -35,7 +35,7 @@ anchorTagsInMenu.forEach(element => {
 sliderData = [
   {
     picture: "images/picture-of-mobile-cleaning-facilities.webp",
-    text: `maintain a clean an hygienic workspace
+    text: `Maintain a clean an hygienic workspace
      environment with our janitorial services`
   },
   {

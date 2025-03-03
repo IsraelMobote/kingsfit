@@ -66,8 +66,10 @@
 
     /*------------- Hero Image Styling --------------*/
     .heroImage {
+        position: relative;
         width: 85%;
         margin: 0 auto;
+        margin-bottom: 14rem;
     }
 
     .heroImage img {
@@ -106,12 +108,12 @@
 
 
     .hero-image-icons {
-        position: relative;
-        bottom: 7.7rem;
+        position: absolute;
+        bottom: -130px;
         display: flex;
         justify-content: space-evenly;
         width: 85%;
-        margin: 2rem auto 1rem;
+        margin: 2rem 7.5% 0;
         padding: 3rem 0;
         backdrop-filter: blur(6px);
         background-color: rgba(255, 255, 255, 0.699);
@@ -144,5 +146,55 @@
         text-align: center;
     }
 
+    .sliderSection {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #actualSlider { 
+        width: 100%;
+        height: fit-content;
+    }
+
     
+.sliderSection> .sliderIcons p {
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    top: 45%;
+    right: -2%;
+    width: fit-content;
+    padding: 10px 13px 10px 15px;
+    background-color: white;
+}
+
+
+.sliderSection> .sliderIcons p:first-child {
+    position: absolute;
+    left: -2%;
+    padding: 10px 15px 10px 13px;
+}
+
+#actualSlider > p {
+    font-size: 1.6rem;
+    padding: 0 50px;
+    line-height: 2.5rem;
+    background-image: linear-gradient( to right, #73a4d11a, white);
+}
+
+
+.sliderWayCircles {
+    margin: 2rem auto 0;
+}
+
+.sliderWayCircles > p {
+    margin: 0 5px;
+    padding: 6px 8px;
+}
+
+.sliderWayCircles > p.active {
+    padding: 6px 12px;
+}
+
+
 }
