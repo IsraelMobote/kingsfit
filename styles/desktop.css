@@ -121,13 +121,13 @@
         box-shadow: 0 4px 8px rgba(128, 128, 128, 0.514);
     }
 
-    .hero-image-icons > div {
-      width: 120px;
-      justify-content: center;
-      align-items: center;
+    .hero-image-icons>div {
+        width: 120px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .hero-image-icons > div > img {
+    .hero-image-icons>div>img {
         position: relative;
         top: 0;
         width: 80%;
@@ -137,7 +137,7 @@
         border-radius: 30px;
     }
 
-    .hero-image-icons > .hero-icon-div > p {
+    .hero-image-icons>.hero-icon-div>p {
         position: relative;
         top: 7px;
         font-size: 0.8rem;
@@ -151,51 +151,83 @@
         margin: 0 auto;
     }
 
-    #actualSlider { 
+    #actualSlider {
         width: 100%;
         height: fit-content;
     }
 
-    
-.sliderSection> .sliderIcons p {
-    font-size: 20px;
-    font-weight: 900;
-    position: absolute;
-    top: 45%;
-    right: -2%;
-    width: fit-content;
-    padding: 10px 13px 10px 15px;
-    background-color: white;
-}
+
+    .sliderSection>.sliderIcons p {
+        font-size: 20px;
+        font-weight: 900;
+        position: absolute;
+        top: 45%;
+        right: -2%;
+        width: fit-content;
+        padding: 10px 13px 10px 15px;
+        background-color: white;
+    }
 
 
-.sliderSection> .sliderIcons p:first-child {
-    position: absolute;
-    left: -2%;
-    padding: 10px 15px 10px 13px;
-}
+    .sliderSection>.sliderIcons p:first-child {
+        position: absolute;
+        left: -2%;
+        padding: 10px 15px 10px 13px;
+    }
 
-#actualSlider > p {
-    font-size: 1.6rem;
-    padding: 0 50px;
-    line-height: 2.5rem;
-    background-image: linear-gradient( to right, #73a4d11a, white);
-}
+    #actualSlider>p {
+        font-size: 1.6rem;
+        padding: 0 50px;
+        line-height: 2.5rem;
+        background-image: linear-gradient(to right, #73a4d11a, white);
+    }
 
 
-.sliderWayCircles {
-    margin: 2rem auto 0;
-}
+    .sliderWayCircles {
+        margin: 2rem auto 0;
+    }
 
-.sliderWayCircles > p {
-    margin: 0 5px;
-    padding: 6px 8px;
-    background-color: #a3a0a0;;
-}
+    .sliderWayCircles>p {
+        margin: 0 5px;
+        padding: 6px 8px;
+        background-color: #a3a0a0;
+        ;
+    }
 
-.sliderWayCircles > p.active {
-    padding: 6px 12px;
-}
+    .sliderWayCircles>p.active {
+        padding: 6px 12px;
+    }
+
+    /*--------------- Our Services Styling --------------*/
+
+
+    #our-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    #our-services h1 {
+        grid-column: 1 / 4;
+    }
+
+    #our-services div {
+        width: 85%;
+        margin: 40px auto;
+    }
+
+
+    #our-services h2 {
+        font-size: 0.8rem;
+    }
+
+
+    #our-services p {
+        height: 120px;
+    }
+
+
 
 
 }
