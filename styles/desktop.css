@@ -241,7 +241,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 0 auto;
-        background-color: aqua;
+    }
+
+
+    #about-us .cleaningTypesContainer>div {
+        width: 60%;
+        margin: 0 auto;
     }
 
 
