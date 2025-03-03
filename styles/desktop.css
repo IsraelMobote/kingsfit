@@ -227,7 +227,22 @@
         height: 120px;
     }
 
+    #about-us>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    #about-us>div>div:first-child {
+        grid-row: 1 / 4;
+    }
+
+    #about-us>div>div:last-child {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        background-color: aqua;
+    }
 
 
 }
