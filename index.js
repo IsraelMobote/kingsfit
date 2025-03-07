@@ -512,16 +512,16 @@ function displayFAQs(list) {
     answer.textContent = element.answer
     answerContainer.append(answer)
 
-    sign.addEventListener('click', function () {
+    questionContainer.append(question)
+    questionContainer.append(sign)
+
+    questionContainer.addEventListener('click', function () {
       sign.classList.toggle('changeTextContent')
       sign.textContent = ""
 
       answerContainer.classList.toggle('active')
     })
-
-    questionContainer.append(question)
-    questionContainer.append(sign)
-
+    
     quesAndAnswerContainer.append(questionContainer)
     quesAndAnswerContainer.append(answerContainer)
 

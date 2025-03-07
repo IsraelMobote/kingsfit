@@ -430,4 +430,10 @@
         margin: 1rem 0;
     }
 
+
+    #frequent-asked-questions>div>div:first-child>p {
+        font-size: 0.8rem;
+    }
+
+
 }
