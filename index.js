@@ -193,17 +193,17 @@ cleaningTypes = [{
   title: 'Apartment Cleaning & Sanitizing',
   moreInfo: 'Our thorough apartment cleaning services never miss the little details in your space!'
 }, {
-  image: 'images/pnggg2(1).png',
+  image: 'images/pnggg3(1).png',
   alt: 'Icon of a bucket with containers for cleaning, like bottles and spray bottles with its colours consisting of lightblue,skyblue and yellow',
   title: 'Move In / Move Out Cleaning',
   moreInfo: 'Moving can be messy but our cleaning professionals ensure a spotless clean'
 }, {
-  image: 'images/pnggg3(1).png',
+  image: 'images/pnggg4(1).png',
   alt: 'Icon of a van with its colours consisting of lightblue,skyblue and yellow',
   title: 'House Cleaning & Sanitizing',
   moreInfo: 'Our unique Detail-Clean Rotation System ensures that your home is cleaned to the highest standard.'
 }, {
-  image: 'images/pnggg4(1).png',
+  image: 'images/pnggg2(1).png',
   alt: 'Icon of a bungalow building with its colours consisting of lightblue,skyblue and yellow',
   title: 'One-Time Cleaning Services',
   moreInfo: 'We proudly offer customizable one-time cleaning programs to suit your needs.'
@@ -248,6 +248,7 @@ displayServices();
 
 const aboutUs = document.querySelector('#about-us')
 
+let aboutUsCounter = 0;
 function displayAboutUs(element) {
   element.innerHTML = '';
 
@@ -268,6 +269,7 @@ function displayAboutUs(element) {
 
   const paragraph1 = document.createElement('p')
   paragraph1.textContent = aboutInfo.paragraph1
+  paragraph1.classList.add('increasePadding')
 
   const paragraph2 = document.createElement('p')
   paragraph2.textContent = aboutInfo.paragraph2
@@ -288,7 +290,7 @@ function displayAboutUs(element) {
 
     const title = document.createElement('p')
     title.textContent = item.title
-    title.className = 'title'
+    title.classList.add('title')
 
     const moreInfo = document.createElement('p')
     moreInfo.textContent = item.moreInfo
@@ -302,9 +304,9 @@ function displayAboutUs(element) {
 
   aboutUsContainer.append(imageContainer);
 
+  aboutUsContainer.append(paragraph1);
   aboutUsContainer.append(paragraph2);
   aboutUsContainer.append(paragraph3);
-  aboutUsContainer.append(paragraph1);
 
   aboutUsContainer.append(cleaningTypesContainer)
 
@@ -342,6 +344,7 @@ function displayFeatures(element) {
 
   const heading = document.createElement('h1')
   heading.textContent = 'Our Features'
+  heading.classList.add('featuresHeading')
 
   const img = document.createElement('img')
   img.src = featuresList.mainImage
