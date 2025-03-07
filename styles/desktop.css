@@ -209,6 +209,7 @@
     }
 
     #our-services h1 {
+        font-size: 2rem;
         grid-column: 1 / 4;
         padding-top: 2rem;
     }
@@ -228,7 +229,11 @@
         height: 120px;
     }
 
+
+    /*--------------- About Us Styling --------------*/
+
     #about-us>h1 {
+        font-size: 2rem;
         padding-top: 2rem;
     }
 
@@ -335,9 +340,36 @@
 
     /*--------------- Fumigation and Deratting Section Styling --------------*/
 
-    #fumigationAndRatting > div {
+    #fumigationAndRatting h1 {
+        font-size: 2rem;
+    }
+
+    #fumigationAndRatting>div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0 50px;
+        gap: 0 45px;
     }
-}   
+
+    #fumigationAndRatting>div>div {
+        margin-top: 0;
+    }
+
+
+    #fumigationAndRatting div>div>img:first-child {
+        position: absolute;
+        height: 190px;
+        border-bottom-right-radius: 45%;
+        box-shadow: 3px 0 10px 2px rgba(128, 128, 128, 0.678);
+        transform: translateY(-40px);
+    }
+
+    #fumigationAndRatting div>div>img {
+        height: 290px;
+    }
+
+    #fumigationAndRatting div>div>p {
+        font-weight: 600;
+
+        line-height: 1.2rem;
+    }
+}

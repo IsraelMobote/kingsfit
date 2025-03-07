@@ -368,7 +368,6 @@ body.active {
 }
 
 #about-us h1 {
-    font-weight: 900;
     text-align: center;
     margin: 0 auto 3rem;
 }
@@ -465,7 +464,6 @@ body.active {
 
 #features div>h1 {
     font-size: 1.6rem;
-    font-weight: 800;
     margin: 1rem auto;
     width: 100%;
     text-align: center;
@@ -555,7 +553,6 @@ button {
 
 #fumigationAndRatting>h1 {
     font-size: 1.4rem;
-    font-weight: 900;
     text-align: center;
     margin-bottom: 1.2rem;
 }
