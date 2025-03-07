@@ -333,5 +333,11 @@
         font-weight: 600;
     }
 
+    /*--------------- Fumigation and Deratting Section Styling --------------*/
 
-}
+    #fumigationAndRatting > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 50px;
+    }
+}   
