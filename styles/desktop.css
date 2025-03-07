@@ -412,6 +412,7 @@
     .FAQs>ul {
         width: 100%;
         padding: 0.4rem 0 0 2rem;
+        margin-top: 3.5rem;
     }
 
     .FAQs>ul>li {
@@ -419,6 +420,9 @@
         margin-bottom: 1rem;
     }
 
+    #frequent-asked-questions {
+        margin-top: 1.5rem;
+    }
 
     #frequent-asked-questions>div {
         padding: 0.4rem 10px;
