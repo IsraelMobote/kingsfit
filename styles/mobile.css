@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primaryFont : 'Inter', Helvetica, sans-serif;
+    --primaryFont: 'Inter', Helvetica, sans-serif;
     --backgroundColor: #e4f4ff70;
     --primaryColor: #0067C8;
     --secondaryColor: #000000;
@@ -119,24 +119,26 @@ body.active {
         transform: translateX(100%);
         opacity: 0;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         transform: translateX(0%);
         opacity: 1;
     }
 }
 
-.menuItems > p {
+.menuItems>p {
     margin: 1.7rem 0 1.7rem 44px;
 }
 
-.menuItems > p:first-child {
+.menuItems>p:first-child {
     margin-top: 7rem;
 }
 
-.menuItems > p:last-child {
+.menuItems>p:last-child {
     width: fit-content;
     padding: 5px 15px;
     margin: 35px 0 0 30px;
@@ -157,7 +159,7 @@ body.active {
 }
 
 
-.menuItems > p > a {
+.menuItems>p>a {
     color: var(--primaryColor);
     text-decoration: none;
 }
@@ -179,6 +181,7 @@ body.active {
     background-image: linear-gradient(black, black);
     z-index: -5;
 }
+
 .heroImage .herotext-container {
     margin-top: 1rem;
     position: relative;
@@ -187,6 +190,7 @@ body.active {
     height: 29rem;
     background-color: rgba(0, 0, 0, 0.253);
 }
+
 .heroText {
     height: fit-content;
     background-color: rgba(128, 128, 128, 0.247);
@@ -222,6 +226,7 @@ body.active {
 .sliderSection {
     position: relative;
 }
+
 #actualSlider {
     width: 90%;
     height: 12rem;
@@ -231,33 +236,33 @@ body.active {
     background-color: #0f81ec1a;
 }
 
-#actualSlider > img {
+#actualSlider>img {
     width: 100%;
     height: 100%;
     opacity: 1;
     transition: opacity 0.25s;
 }
 
-#actualSlider > img.fade-away {
+#actualSlider>img.fade-away {
     opacity: 0.3;
 }
 
-#actualSlider > p {
+#actualSlider>p {
     font-size: 0.9rem;
     line-height: 1.7rem;
     padding: 0 10px;
-    background-image: linear-gradient( to right, #0f81ec1a, white);
+    background-image: linear-gradient(to right, #0f81ec1a, white);
     height: 100%;
     align-content: center;
     opacity: 1;
     transition: opacity 0.25s;
 }
 
-#actualSlider > p.fade-away {
+#actualSlider>p.fade-away {
     opacity: 0.3;
 }
 
-.sliderSection> .sliderIcons p {
+.sliderSection>.sliderIcons p {
     font-size: 13px;
     font-weight: 900;
     position: absolute;
@@ -270,11 +275,11 @@ body.active {
     box-shadow: 3px 3px 3px grey;
 }
 
-.sliderIcons > p.hide {
+.sliderIcons>p.hide {
     display: none;
 }
 
-.sliderSection> .sliderIcons p:first-child {
+.sliderSection>.sliderIcons p:first-child {
     position: absolute;
     left: 3%;
     padding: 3px 7px 3px 3px;
@@ -287,14 +292,14 @@ body.active {
     justify-content: space-evenly;
 }
 
-.sliderWayCircles > p {
+.sliderWayCircles>p {
     margin: 0 3px;
     padding: 4px;
     border-radius: 50%;
     background-color: var(--tertiaryColor);
 }
 
-.sliderWayCircles > p.active {
+.sliderWayCircles>p.active {
     padding: 4px 8px;
     border-radius: 35%;
     background-color: var(--primaryColor);
@@ -303,7 +308,11 @@ body.active {
 /*------- Our Services Styling -------*/
 
 #our-services {
-    h1, h2, p, span {
+
+    h1,
+    h2,
+    p,
+    span {
         text-align: center;
     }
 }
@@ -323,7 +332,7 @@ body.active {
     background-image: linear-gradient(var(--backgroundColor), var(--backgroundColor), var(--backgroundColor), white);
 }
 
-#our-services div > img  {
+#our-services div>img {
     width: 100%;
     height: 13rem;
 }
@@ -364,12 +373,12 @@ body.active {
     margin: 0 auto 3rem;
 }
 
-#about-us > div {
+#about-us>div {
     width: 85%;
     margin: 0 auto;
 }
 
-#about-us > div > div {
+#about-us>div>div {
     width: 65%;
     height: 250px;
     margin: 0 auto 5rem;
@@ -377,14 +386,14 @@ body.active {
     border-radius: 0 20% 0 0;
 }
 
-#about-us > div > div > img {
+#about-us>div>div>img {
     width: 105%;
     height: 255px;
     border-radius: 0 20% 0 0;
     transform: translate(1rem, 1rem);
 }
 
-#about-us > div > p {
+#about-us>div>p {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -401,10 +410,11 @@ body.active {
     justify-content: space-between;
 }
 
-#about-us .cleaningTypesContainer > div {
+#about-us .cleaningTypesContainer>div {
     width: 40%;
 }
-#about-us .cleaningTypesContainer > div > .title {
+
+#about-us .cleaningTypesContainer>div>.title {
     width: 100%;
     font-size: 0.9rem;
     font-weight: 600;
@@ -413,12 +423,12 @@ body.active {
     margin-top: 0;
 }
 
-#about-us .cleaningTypesContainer > div > img {
+#about-us .cleaningTypesContainer>div>img {
     width: 80%;
     margin-top: 2rem;
 }
 
-#about-us .cleaningTypesContainer > div > p {
+#about-us .cleaningTypesContainer>div>p {
     width: 90%;
     font-size: 0.65rem;
     font-weight: 200;
@@ -434,7 +444,7 @@ body.active {
     margin-bottom: 100px;
 }
 
-#features > img {
+#features>img {
     height: 500px;
     position: absolute;
     top: 0;
@@ -443,7 +453,7 @@ body.active {
     z-index: -1;
 }
 
-#features > div {
+#features>div {
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -453,7 +463,7 @@ body.active {
     background-color: rgba(0, 0, 0, 0.411);
 }
 
-#features div > h1 {
+#features div>h1 {
     font-size: 1.6rem;
     font-weight: 800;
     margin: 1rem auto;
@@ -462,7 +472,7 @@ body.active {
     color: white;
 }
 
-#features > div > div { 
+#features>div>div {
     width: 40%;
     color: white;
     font-size: 0.85rem;
@@ -472,13 +482,13 @@ body.active {
     margin: 20px 0;
 }
 
-#features > div > div > img {
+#features>div>div>img {
     width: 60px;
     height: 60px;
     margin-bottom: 15px;
 }
 
-#features > div > div > img.increaseSize{
+#features>div>div>img.increaseSize {
     margin-top: -30px;
     width: 100px;
     height: 100px;
@@ -491,12 +501,15 @@ body.active {
     padding-top: 6rem;
 }
 
-#getInTouchSection h1{
+#getInTouchSection h1 {
     text-align: center;
     margin: 0 auto 3.1rem;
 }
 
-#getInTouchSection input, #getInTouchSection label, textarea, button {
+#getInTouchSection input,
+#getInTouchSection label,
+textarea,
+button {
     display: block;
 }
 
@@ -505,7 +518,8 @@ body.active {
     margin: 0 auto;
 }
 
-#getInTouchSection input, #getInTouchSection textarea {
+#getInTouchSection input,
+#getInTouchSection textarea {
     width: 100%;
     padding: 11px 15px;
     margin: 9px 0;
@@ -531,39 +545,40 @@ body.active {
     border-radius: 13px;
 }
 
-#getInTouchSection button a, #getInTouchSection button a:focus  {
+#getInTouchSection button a,
+#getInTouchSection button a:focus {
     text-decoration: none;
     color: white;
 }
 
 /*--------------- Fumigation and Ratting Section ----------------*/
 
-#fumigationAndRatting > h1 {
+#fumigationAndRatting>h1 {
     font-size: 1.4rem;
     font-weight: 900;
     text-align: center;
     margin-bottom: 1.2rem;
 }
 
-#fumigationAndRatting > hr {
+#fumigationAndRatting>hr {
     padding: 0.4px 0;
     width: 80%;
     background-color: var(--primaryColor);
     margin: 0 auto 6.2rem;
 }
 
-#fumigationAndRatting > div {
+#fumigationAndRatting>div {
     width: 85%;
     margin: 0 auto;
 }
 
 
-#fumigationAndRatting div > div {
+#fumigationAndRatting div>div {
     position: relative;
     margin-top: 5rem;
 }
 
-#fumigationAndRatting div > div > img:first-child {
+#fumigationAndRatting div>div>img:first-child {
     position: absolute;
     width: 40%;
     height: 150px;
@@ -572,13 +587,14 @@ body.active {
     transform: translateY(-23px);
     padding-left: 0;
 }
-#fumigationAndRatting div > img {
+
+#fumigationAndRatting div>img {
     padding-left: 10%;
     width: 90%;
     height: 240px;
 }
 
-#fumigationAndRatting div > div > p {
+#fumigationAndRatting div>div>p {
     width: 90%;
     padding-left: 10%;
     font-size: 0.8rem;
@@ -599,17 +615,18 @@ body.active {
 .liner {
     width: 80%;
     margin: 1.5rem auto;
-    border-bottom: 2px solid var(--primaryColor);
+    border-bottom: 1px solid #3692e7;
+    ;
 }
 
-.FAQs > p {
+.FAQs>p {
     font-size: 0.7rem;
     text-align: center;
     width: 90%;
     margin: 0 auto;
 }
 
-.FAQs > ul {
+.FAQs>ul {
     width: 75%;
     margin: 2.5rem auto;
     font-size: 0.7rem;
@@ -622,7 +639,7 @@ body.active {
     box-sizing: border-box;
 }
 
-#frequent-asked-questions > div {
+#frequent-asked-questions>div {
     background-color: #bad3e960;
     padding: 0.8rem 10px;
     margin: 1rem 0;
@@ -630,12 +647,12 @@ body.active {
     border-radius: 8px;
 }
 
-#frequent-asked-questions > div > div {
+#frequent-asked-questions>div>div {
     display: flex;
     justify-content: space-between;
 }
 
-#frequent-asked-questions > div > div:first-child > p {
+#frequent-asked-questions>div>div:first-child>p {
     font-size: 0.68rem;
     font-weight: 800;
     padding-left: 3px;
@@ -643,7 +660,7 @@ body.active {
     align-self: center;
 }
 
-#frequent-asked-questions > div > div > span {
+#frequent-asked-questions>div>div>span {
     align-self: center;
     position: relative;
     bottom: 5px;
@@ -651,29 +668,29 @@ body.active {
 }
 
 
-#frequent-asked-questions > div > div > span::before {
+#frequent-asked-questions>div>div>span::before {
     content: "+";
     font-size: 2.2rem;
     font-weight: 300;
 }
 
-#frequent-asked-questions > div > div > span.changeTextContent::before {
+#frequent-asked-questions>div>div>span.changeTextContent::before {
     content: "-";
 }
 
 /*the styling below is the styling for the answer line of the frequent-asked-questions*/
-#frequent-asked-questions > div > .answerContainer {
+#frequent-asked-questions>div>.answerContainer {
     display: grid;
     grid-template-rows: 0fr;
 }
 
-#frequent-asked-questions > div > .answerContainer > p {
+#frequent-asked-questions>div>.answerContainer>p {
     overflow: hidden;
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-#frequent-asked-questions > div > .answerContainer.active {
+#frequent-asked-questions>div>.answerContainer.active {
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.6s ease-out;
 }
@@ -687,7 +704,7 @@ footer {
     padding-top: 5rem;
 }
 
-footer > p {
+footer>p {
     width: 55%;
     margin: 0 auto;
     font-size: 0.65rem;
@@ -696,7 +713,7 @@ footer > p {
     text-align: center;
 }
 
-footer > .headingInFooter {
+footer>.headingInFooter {
     font-size: 0.87rem;
     font-weight: 800;
     margin-bottom: 0.95rem;
