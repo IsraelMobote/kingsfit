@@ -250,8 +250,8 @@
 
     #about-us>div {
         display: grid;
-        grid-template-columns: 60% 40%;
-        gap: 20px 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
     #about-us>div>div:first-child {
