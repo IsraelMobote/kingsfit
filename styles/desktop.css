@@ -70,8 +70,9 @@
     }
 
     .headerItems>p>a.clicked {
-        font-weight: 900;
-        border-bottom: 3px solid var(--primaryColor);
+        font-weight: 800;
+        padding-bottom: 3px;
+        border-bottom: 5px solid var(--primaryColor);
     }
 
     /*------------- Hero Image Styling --------------*/
