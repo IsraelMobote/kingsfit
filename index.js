@@ -504,17 +504,17 @@ function displayFAQs(list) {
 
     questionContainer.append(question)
     questionContainer.append(sign)
-
-    questionContainer.addEventListener('click', function () {
-      sign.classList.toggle('changeTextContent')
-      sign.textContent = ""
-
-      answerContainer.classList.toggle('active')
-    })
     
     quesAndAnswerContainer.append(questionContainer)
     quesAndAnswerContainer.append(answerContainer)
 
+    quesAndAnswerContainer.addEventListener('click', function () {
+      sign.classList.toggle('changeTextContent')
+      sign.textContent = ""
+
+      answerContainer.classList.toggle('show')
+    })
+    
     FAQsContainer.append(quesAndAnswerContainer);
   });
 }
