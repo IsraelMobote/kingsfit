@@ -553,6 +553,10 @@ button {
     color: white;
 }
 
+#getInTouchSection > img {
+    width: 100%;
+}
+
 /*--------------- Fumigation and Ratting Section ----------------*/
 
 #fumigationAndRatting>h1 {
