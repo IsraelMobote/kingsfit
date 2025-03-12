@@ -69,8 +69,9 @@
         color: var(--primaryColor);
     }
 
-    #home.clicked {
+    .headerItems>p>a.clicked {
         font-weight: 900;
+        border-bottom: 3px solid var(--primaryColor);
     }
 
     /*------------- Hero Image Styling --------------*/
