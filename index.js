@@ -316,10 +316,7 @@ function displayAboutUs(element) {
 
 displayAboutUs(aboutUs);
 
-featuresList = {
-  mainImage: 'images/medium-shot-workers-with-cleaning-cart.webp',
-  mainImageAlt: '',
-  features: [{
+featuresList = [{
     featureImage: 'images/ppp1.png',
     featureAlt: '',
     featureTitle: 'Happy Customers'
@@ -335,8 +332,7 @@ featuresList = {
     featureImage: 'images/Untitled-1.png',
     featureAlt: '',
     featureTitle: 'Quality Cleaning Services'
-  }]
-}
+  }];
 
 const features = document.querySelector('#features');
 
@@ -346,17 +342,12 @@ function displayFeatures(element) {
   heading.textContent = 'Our Features'
   heading.classList.add('featuresHeading')
 
-  const img = document.createElement('img')
-  img.src = featuresList.mainImage
-  img.alt = featuresList.mainImageAlt
-  img.loading = 'lazy'
-
   const featuresContainer = document.createElement('div')
   featuresContainer.append(heading)
 
   let counterNumber = 0
 
-  featuresList.features.forEach(item => {
+  featuresList.forEach(item => {
 
     counterNumber += 1
 
@@ -380,7 +371,6 @@ function displayFeatures(element) {
     featuresContainer.append(featureInnerContainer)
   });
 
-  element.append(img)
   element.append(featuresContainer)
 
 }
