@@ -22,9 +22,10 @@ function removeClickedState() {
   getInTouch.classList.remove('clicked')
 };
 
-home.addEventListener('click', () => {
-  removeClickedState()
-  home.classList.add('clicked')
+home.addEventListener('click', function() {
+  console.log('2');
+  removeClickedState();
+  home.classList.add('clicked');
 });
 
 about.addEventListener('click', () => {
