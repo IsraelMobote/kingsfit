@@ -9,6 +9,30 @@ const menuItems = document.querySelector('.menuItems');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
 
+const home = document.querySelector('#home');
+const services = document.querySelector('#services');
+const about = document.querySelector('#about');
+const getInTouch = document.querySelector('#getInTouch');
+
+function removeClickedState() {
+  home.classList.remove('clicked')
+  services.classList.remove('clicked')
+  about.classList.remove('clicked')
+  getInTouch.classList.remove('clicked')
+}
+
+home.addEventListener('click', () => {
+  removeClickedState()
+  home.classList.add('clicked')
+});
+
+
+about.addEventListener('click', () => {
+  removeClickedState()
+  about.classList.add('clicked')
+});
+
+
 menuBarsContainer.addEventListener('click', function () {
   header.classList.toggle('active')
   menuItems.classList.toggle('active')
