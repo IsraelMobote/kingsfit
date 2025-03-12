@@ -69,6 +69,10 @@
         color: var(--primaryColor);
     }
 
+    .headerItems>p>a.clicked {
+        font-weight: 700;
+    }
+
     /*------------- Hero Image Styling --------------*/
     .heroImage {
         position: relative;
