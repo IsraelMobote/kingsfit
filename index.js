@@ -496,13 +496,6 @@ function displayFAQs(list) {
     const question = document.createElement('p')
     question.textContent = element.question
 
-    question.addEventListener('click', function () {
-      sign.classList.toggle('changeTextContent')
-      sign.textContent = ""
-
-      answerContainer.classList.toggle('show')
-    })
-
     const sign = document.createElement('span')
 
     const answerContainer = document.createElement('div')
@@ -517,6 +510,14 @@ function displayFAQs(list) {
     
     quesAndAnswerContainer.append(questionContainer)
     quesAndAnswerContainer.append(answerContainer)
+
+    quesAndAnswerContainer.addEventListener('click', function () {
+      sign.classList.toggle('changeTextContent')
+      sign.textContent = ""
+
+      answerContainer.classList.toggle('show')
+    })
+
     
     FAQsContainer.append(quesAndAnswerContainer);
   });
