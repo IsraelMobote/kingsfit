@@ -182,7 +182,7 @@ body.active {
     position: absolute;
     margin: 0 auto;
     width: 100%;
-    height: 29rem;
+    height: 400px;
     filter: brightness(0%);
     filter: saturate(150%);
     background-image: linear-gradient(black, black);
@@ -194,7 +194,7 @@ body.active {
     position: relative;
     top: -1rem;
     width: 100%;
-    height: 29rem;
+    height: 400px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
