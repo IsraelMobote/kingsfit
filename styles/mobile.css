@@ -701,7 +701,7 @@ footer {
     padding-top: 5rem;
 }
 
-footer>p {
+.footerContainer> div >p {
     width: 55%;
     margin: 0 auto;
     font-size: 0.65rem;
@@ -710,7 +710,7 @@ footer>p {
     text-align: center;
 }
 
-footer>.headingInFooter {
+.footerContainer> div >.headingInFooter {
     font-size: 0.87rem;
     font-weight: 800;
     margin-bottom: 0.95rem;

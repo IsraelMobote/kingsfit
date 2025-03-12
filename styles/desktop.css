@@ -435,5 +435,43 @@
         font-size: 0.8rem;
     }
 
+    /*----------------- Footer Styling ------------------*/
+
+    footer {
+        padding-top: 3rem;
+    }
+
+    .footerContainer {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+        margin: 0 auto 50px;
+    }
+
+    .footerContainer>.liner {
+        display: none;
+    }
+
+    .footerContainer>.addLeftBorder {
+        border-right: 2px solid #0067c88c;
+    }
+
+    .footerContainer>div {
+        padding-bottom: 2.5rem;
+    }
+
+    .footerContainer>div>p {
+        width: 75%;
+        margin: 0 auto;
+        font-size: 0.78rem;
+        font-weight: 500;
+        line-height: 1.7rem;
+        text-align: left;
+    }
+
+    .footerContainer>div>.headingInFooter {
+        font-size: 0.87rem;
+        font-weight: 800;
+    }
 
 }
