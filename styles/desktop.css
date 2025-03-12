@@ -444,7 +444,7 @@
     .footerContainer {
         width: 90%;
         display: grid;
-        grid-template-columns: 1.5fr 1.5fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto 50px;
     }
 
@@ -470,8 +470,9 @@
     }
 
     .footerContainer>div>.headingInFooter {
-        font-size: 0.87rem;
+        font-size: 1.1rem;
         font-weight: 800;
+        margin-bottom: 1.15rem;
     }
 
 }
