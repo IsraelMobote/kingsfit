@@ -9,6 +9,7 @@ const menuItems = document.querySelector('.menuItems');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
 
+// the styling below is for the menuItems to show way finder when a link is clicked
 const home = document.querySelector('#home');
 const services = document.querySelector('#services');
 const about = document.querySelector('#about');
@@ -19,18 +20,29 @@ function removeClickedState() {
   services.classList.remove('clicked')
   about.classList.remove('clicked')
   getInTouch.classList.remove('clicked')
-}
+};
 
 home.addEventListener('click', () => {
   removeClickedState()
   home.classList.add('clicked')
 });
 
-
 about.addEventListener('click', () => {
   removeClickedState()
   about.classList.add('clicked')
 });
+
+services.addEventListener('click', () => {
+  removeClickedState()
+  services.classList.add('clicked')
+});
+
+getInTouch.addEventListener('click', () => {
+  removeClickedState()
+  getInTouch.classList.add('clicked')
+});
+
+// the styling for way finder ends here
 
 
 menuBarsContainer.addEventListener('click', function () {
