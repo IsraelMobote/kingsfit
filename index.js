@@ -486,12 +486,22 @@ FAQs = [{
 const FAQsContainer = document.querySelector('#frequent-asked-questions');
 
 function displayFAQs(list) {
+
+  FAQsContainer.innerHTML = '';
+  
   list.forEach(element => {
     const quesAndAnswerContainer = document.createElement('div')
 
     const questionContainer = document.createElement('div')
     const question = document.createElement('p')
     question.textContent = element.question
+
+    question.addEventListener('click', function () {
+      sign.classList.toggle('changeTextContent')
+      sign.textContent = ""
+
+      answerContainer.classList.toggle('show')
+    })
 
     const sign = document.createElement('span')
 
@@ -507,13 +517,6 @@ function displayFAQs(list) {
     
     quesAndAnswerContainer.append(questionContainer)
     quesAndAnswerContainer.append(answerContainer)
-
-    quesAndAnswerContainer.addEventListener('click', function () {
-      sign.classList.toggle('changeTextContent')
-      sign.textContent = ""
-
-      answerContainer.classList.toggle('show')
-    })
     
     FAQsContainer.append(quesAndAnswerContainer);
   });
