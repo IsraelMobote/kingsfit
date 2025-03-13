@@ -482,6 +482,7 @@ function displayFumigationSection(element) {
     fullImage.src = item.fullImage
     fullImage.alt = item.fullImageAlt
     fullImage.loading = 'lazy'
+    fullImage.className = 'fadeIn'
 
     const body = document.createElement('p')
     body.textContent = item.body
@@ -591,6 +592,8 @@ let complete = false;
 const  h1Elements = document.querySelectorAll('h1');
 const riseInElements = document.querySelectorAll('.riseIn');
 
+const fadeInElements = document.querySelectorAll('.fadeIn');
+
 function animateValuesHeading(elementList) {
 
   elementList.forEach(element => {
@@ -605,20 +608,30 @@ function animateValuesHeading(elementList) {
 
 }
 
-function animateClassriseIn(elementList) {
+function animateClassRiseIn(elementList) {
   elementList.forEach(element => {
     if (inView(element)) {
       element.classList.add('animate')
 
       setTimeout(() => {
-        element.classList.add('opacity');
+        element.classList.add('opacity')
       }, 200);
     }
   });
 }
 
+function animateClassFadeIn(elementList) {
+  elementList.forEach(element => {
+    if (inView(element)) {
+      element.classList.add('opacity')
+
+    }
+  });
+}
+
 document.addEventListener('scroll', function () {
-  animateValuesHeading(h1Elements);
-  animateClassriseIn(riseInElements);
+  animateValuesHeading(h1Elements)
+  animateClassRiseIn(riseInElements)
+  animateClassFadeIn(fadeInElements)
 }
 );

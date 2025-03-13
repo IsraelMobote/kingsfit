@@ -108,7 +108,7 @@ h1.opacity {
     opacity: 1;
 }
 
-/*--------------------- elements with riseIn class (animation styling) ----------------------*/
+/*----------- elements with riseIn class (animation styling) -------------*/
 
 .riseIn {
     opacity: 0;
@@ -138,6 +138,19 @@ h1.opacity {
 .riseIn.opacity {
     opacity: 1;
 }
+
+/*----------- elements with fadeIn class (animation styling) -------------*/
+
+.fadeIn {
+    opacity: 0;
+    transition: opacity 0.9s ease-out;
+}
+
+.fadeIn.opacity {
+    opacity: 1;
+}
+
+/*----------- menuItems container styling -------------*/
 
 .menuItemsContainer {
     display: none;
