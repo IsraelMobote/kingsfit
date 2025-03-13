@@ -44,11 +44,17 @@
 
     .headerItems>p:last-child {
         font-size: 0.85rem;
+        font-weight: 400;
         color: var(--primaryColor);
         padding: 5px 10px;
         border: 1.5px solid var(--primaryColor);
         border-radius: 8px;
+        transition: border 0.2s ease-out, font-weight 0.2s ease-out;
+    }
 
+    .headerItems>p:last-child:hover {
+        font-weight: 700;
+        border: 2.5px solid var(--primaryColor);
     }
 
     .headerItems>p:last-child>img {
