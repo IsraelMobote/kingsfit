@@ -29,6 +29,10 @@
         background-color: white;
     }
 
+    .headerBackgroundDiv {
+        display: none;
+    }
+
     .headerItems {
         position: relative;
         left: 35%;
