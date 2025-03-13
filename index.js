@@ -561,3 +561,49 @@ function displayFAQs(list) {
 }
 
 displayFAQs(FAQs);
+
+// codes for animation of the page
+
+
+// check if element is in view
+function inView(element) {
+  // get window height
+  var windowHeight = window.innerHeight;
+  // get number of pixels that the document is scrolled
+  var scrollY = window.scrollY
+
+  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+  var scrollPosition = scrollY + windowHeight;
+  // get element position (distance from the top of the page to the bottom of the element)
+  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 4;
+
+  // is scroll position greater than element position? (is element in view?)
+  if (scrollPosition > elementPosition) {
+    return true;
+  }
+
+  return false;
+}
+
+let complete = false;
+
+const  h1Elements = document.querySelectorAll('h1');
+
+function animateValuesHeading() {
+
+  h1Elements.forEach(element => {
+   if (inView(element)) {
+     element.classList.add('animate');
+
+     setTimeout(() => {
+       element.classList.add('opacity');
+     }, 200);
+   }
+  });
+
+}
+
+document.addEventListener('scroll', function () {
+  animateValuesHeading();
+}
+);
