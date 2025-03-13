@@ -600,6 +600,7 @@ const  h1ElementsToAnimate = document.querySelectorAll('.animateh1');
 const riseInElements = document.querySelectorAll('.riseIn');
 
 const fadeInElements = document.querySelectorAll('.fadeIn');
+const dropInElements = document.querySelectorAll('.dropIn');
 
 function animateValuesHeading(elementList) {
 
@@ -636,9 +637,21 @@ function animateClassFadeIn(elementList) {
   });
 }
 
+function animateClassdropIn(elementList) {
+  elementList.forEach(element => {
+    setTimeout(() => {
+      if (inView(element)) {
+        element.classList.add('animate')
+  
+      }
+    });
+    }, 200);
+}
+
 document.addEventListener('scroll', function () {
   animateValuesHeading(h1ElementsToAnimate)
   animateClassRiseIn(riseInElements)
   animateClassFadeIn(fadeInElements)
+  animateClassdropIn(dropInElements)
 }
 );
