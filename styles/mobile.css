@@ -94,34 +94,40 @@ h1 {
     0% {
         transform: translateY(220%);
     }
+
     100% {
         transform: translateY(0%);
     }
- }
+}
 
- h1.animate {
+h1.animate {
     animation: flyIn 0.6s ease-in-out;
- }
+}
 
- h1.opacity {
+h1.opacity {
     opacity: 1;
- }
+}
 
 /*--------------------- elements with moveIn class (animation styling) ----------------------*/
 
 .moveIn {
     opacity: 0;
-    transition: 0.4s opacity;
+    transition: 0.4s opacity ease-in-out;
 }
 
 @keyframes riseIn {
     0% {
-        position: relative;
-        top: 2rem;
+        position: absolute;
+        left: 7.5%;
+        bottom: 0rem;
+        line-height: 1.5rem;
     }
+
     100% {
-        position: relative;
-        top: 0rem;
+        position: absolute;
+        left: 7.5%;
+        bottom: 3rem;
+        line-height: 1.2rem;
     }
 }
 
@@ -395,12 +401,13 @@ body.active {
 
 #our-services h2 {
     font-size: 0.9rem;
-    margin: 1.9rem 0 9rem;
+    margin: 1.9rem 0 8.5rem;
 }
 
 #our-services p {
     position: absolute;
     left: 7.5%;
+    bottom: 3rem;
     font-size: 0.87rem;
     font-weight: 400;
     line-height: 1.2rem;
@@ -501,7 +508,7 @@ body.active {
     margin-bottom: 100px;
 }
 
-#features> .featureImage {
+#features>.featureImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -611,7 +618,7 @@ button {
     color: white;
 }
 
-#getInTouchSection > img {
+#getInTouchSection>img {
     width: 100%;
 }
 
@@ -768,7 +775,7 @@ footer {
     padding-top: 5rem;
 }
 
-.footerContainer> div >p {
+.footerContainer>div>p {
     width: 55%;
     margin: 0 auto;
     font-size: 0.65rem;
@@ -777,7 +784,7 @@ footer {
     text-align: center;
 }
 
-.footerContainer> div >.headingInFooter {
+.footerContainer>div>.headingInFooter {
     font-size: 0.87rem;
     font-weight: 800;
     margin-bottom: 0.95rem;
