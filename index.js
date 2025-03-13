@@ -93,7 +93,6 @@ let sliderText = document.querySelector('#actualSlider p');
 function populateSlider(element) {
  
   sliderImage.setAttribute('src', `${element.picture}`);
-  sliderImage.setAttribute('loading', 'lazy')
   sliderImage.classList.remove('fade-away');
 
   sliderText.textContent = element.text;
