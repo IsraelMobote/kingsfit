@@ -669,6 +669,7 @@ button {
     box-shadow: 2px 0 10px 2px rgba(128, 128, 128, 0.678);
     transform: translateY(-23px);
     padding-left: 0;
+    z-index: 2;
 }
 
 #fumigationAndRatting div>img {
