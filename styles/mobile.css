@@ -449,7 +449,7 @@ body.active {
 /*---------------- About Us Styling -------------------*/
 
 #about-us {
-    padding: 6rem 0 450px;
+    padding: 6rem 0 280px;
     position: relative;
 }
 
@@ -486,9 +486,6 @@ body.active {
 }
 
 #about-us .cleaningTypesContainer {
-    position: absolute;
-    left: 7%;
-    right: 3%;
     bottom: 0rem;
     border: 0;
     border-radius: 0;

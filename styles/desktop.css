@@ -374,8 +374,29 @@
     }
 
 
-    #about-us .cleaningTypesContainer>div {
+    #about-us .cleaningTypesContainer> .dropIn {
+        position: absolute;
+        left: 7%;
         margin: 0 auto;
+        width: 20%;
+    }
+
+    #about-us .cleaningTypesContainer > .dropInTwo {
+        position: absolute;
+        left: 30%;
+        width: 20%;
+    }
+
+    #about-us .cleaningTypesContainer > .dropInThree {
+        position: absolute;
+        left: 53%;
+        width: 20%;
+    }
+
+    #about-us .cleaningTypesContainer > .dropInFour {
+        position: absolute;
+        left: 76%;
+        width: 20%;
     }
 
     #about-us .cleaningTypesContainer>div>img {

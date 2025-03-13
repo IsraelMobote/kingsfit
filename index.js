@@ -93,7 +93,7 @@ let sliderImage = document.querySelector('#actualSlider img');
 let sliderText = document.querySelector('#actualSlider p');
 
 function populateSlider(element) {
- 
+
   sliderImage.setAttribute('src', `${element.picture}`);
   sliderImage.classList.remove('fade-away');
 
@@ -321,9 +321,15 @@ function displayAboutUs(element) {
   const cleaningTypesContainer = document.createElement('div')
   cleaningTypesContainer.className = 'cleaningTypesContainer'
 
+  let cleaningCounter = 0;
+
+  classNameList = ['dropIn', 'dropInTwo', 'dropInThree', 'dropInFour'];
+
   cleaningTypes.forEach(item => {
+
     const cleaningTypesInnerContainer = document.createElement('div')
-    cleaningTypesInnerContainer.className = 'dropIn'
+    cleaningTypesInnerContainer.className = classNameList[cleaningCounter]
+    cleaningCounter += 1;
 
     const image = document.createElement('img')
     image.src = item.image
@@ -359,22 +365,22 @@ function displayAboutUs(element) {
 displayAboutUs(aboutUs);
 
 featuresList = [{
-    featureImage: 'images/ppp1.png',
-    featureAlt: '',
-    featureTitle: 'Happy Customers'
-  }, {
-    featureImage: 'images/gggg1.png',
-    featureAlt: '',
-    featureTitle: 'Flexible and Affordable Pricing'
-  }, {
-    featureImage: 'images/00023030.png',
-    featureAlt: '',
-    featureTitle: 'Diligent Cleaners'
-  }, {
-    featureImage: 'images/Untitled-1.png',
-    featureAlt: '',
-    featureTitle: 'Quality Cleaning Services'
-  }];
+  featureImage: 'images/ppp1.png',
+  featureAlt: '',
+  featureTitle: 'Happy Customers'
+}, {
+  featureImage: 'images/gggg1.png',
+  featureAlt: '',
+  featureTitle: 'Flexible and Affordable Pricing'
+}, {
+  featureImage: 'images/00023030.png',
+  featureAlt: '',
+  featureTitle: 'Diligent Cleaners'
+}, {
+  featureImage: 'images/Untitled-1.png',
+  featureAlt: '',
+  featureTitle: 'Quality Cleaning Services'
+}];
 
 const features = document.querySelector('#features');
 
@@ -534,7 +540,7 @@ const FAQsContainer = document.querySelector('#frequent-asked-questions');
 function displayFAQs(list) {
 
   FAQsContainer.innerHTML = '';
-  
+
   list.forEach(element => {
     const quesAndAnswerContainer = document.createElement('div')
 
@@ -553,7 +559,7 @@ function displayFAQs(list) {
 
     questionContainer.append(question)
     questionContainer.append(sign)
-    
+
     quesAndAnswerContainer.append(questionContainer)
     quesAndAnswerContainer.append(answerContainer)
 
@@ -564,7 +570,7 @@ function displayFAQs(list) {
       answerContainer.classList.toggle('show')
     })
 
-    
+
     FAQsContainer.append(quesAndAnswerContainer);
   });
 }
@@ -596,7 +602,7 @@ function inView(element) {
 
 let complete = false;
 
-const  h1ElementsToAnimate = document.querySelectorAll('.animateh1');
+const h1ElementsToAnimate = document.querySelectorAll('.animateh1');
 const riseInElements = document.querySelectorAll('.riseIn');
 
 const fadeInElements = document.querySelectorAll('.fadeIn');
@@ -605,13 +611,13 @@ const dropInElements = document.querySelectorAll('.dropIn');
 function animateValuesHeading(elementList) {
 
   elementList.forEach(element => {
-   if (inView(element)) {
-     element.classList.add('animate');
+    if (inView(element)) {
+      element.classList.add('animate');
 
-     setTimeout(() => {
-       element.classList.add('opacity');
-     }, 200);
-   }
+      setTimeout(() => {
+        element.classList.add('opacity');
+      }, 200);
+    }
   });
 
 }
@@ -639,13 +645,14 @@ function animateClassFadeIn(elementList) {
 
 function animateClassdropIn(elementList) {
   elementList.forEach(element => {
-    setTimeout(() => {
-      if (inView(element)) {
+    if (inView(element)) {
+
+      setTimeout(() => {
         element.classList.add('animate')
-  
-      }
-    });
-    }, 200);
+      }, 200);
+
+    }
+  });
 }
 
 document.addEventListener('scroll', function () {
