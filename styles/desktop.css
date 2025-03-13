@@ -85,6 +85,38 @@
         border-bottom: 5px solid var(--primaryColor);
     }
 
+
+    /*----------- elements with riseIn class (animation styling) -------------*/
+
+    .riseIn {
+        opacity: 0;
+        transition: 0.4s opacity ease-in-out;
+    }
+
+    @keyframes riseIn {
+        0% {
+            position: absolute;
+            left: 7.5%;
+            bottom: 0rem;
+            line-height: 1.7rem;
+        }
+
+        100% {
+            position: absolute;
+            left: 7.5%;
+            bottom: 2.8rem;
+            line-height: 1.3rem;
+        }
+    }
+
+    .riseIn.animate {
+        animation: riseIn 0.8s ease-in-out;
+    }
+
+    .riseIn.opacity {
+        opacity: 1;
+    }
+
     /*------------- Hero Image Styling --------------*/
     .heroImage {
         position: relative;
@@ -236,6 +268,7 @@
     }
 
     #our-services div {
+        position: relative;
         width: 85%;
         margin: 40px auto;
     }
@@ -243,10 +276,13 @@
 
     #our-services h2 {
         font-size: 0.8rem;
+        margin-bottom: 11rem;
     }
 
 
     #our-services p {
+        position: absolute;
+        bottom: 2.8rem;
         height: 120px;
     }
 

@@ -323,6 +323,7 @@ function displayAboutUs(element) {
 
   cleaningTypes.forEach(item => {
     const cleaningTypesInnerContainer = document.createElement('div')
+    cleaningTypesInnerContainer.className = 'dropIn'
 
     const image = document.createElement('img')
     image.src = item.image
