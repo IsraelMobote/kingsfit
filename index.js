@@ -252,6 +252,7 @@ function displayServices() {
 
   const heading = document.createElement('h1');
   heading.textContent = 'Our Services';
+  heading.className = 'animateh1'
 
   ourServices.append(heading);
 
@@ -292,6 +293,7 @@ function displayAboutUs(element) {
 
   const heading = document.createElement('h1');
   heading.textContent = 'About Us';
+  heading.className = 'animateh1'
 
   element.append(heading);
 
@@ -379,6 +381,7 @@ function displayFeatures(element) {
   const heading = document.createElement('h1')
   heading.textContent = 'Our Features'
   heading.classList.add('featuresHeading')
+  heading.classList.add('animateh1')
 
   const featuresContainer = document.createElement('div')
   featuresContainer.append(heading)
@@ -463,6 +466,8 @@ fumigationList = [{
 function displayFumigationSection(element) {
   const h1 = document.createElement('h1');
   h1.textContent = 'Fumigation And Ratting'
+  h1.className = 'animateh1'
+
   const line = document.createElement('hr')
 
   element.append(h1)
@@ -589,7 +594,7 @@ function inView(element) {
 
 let complete = false;
 
-const  h1Elements = document.querySelectorAll('h1');
+const  h1ElementsToAnimate = document.querySelectorAll('.animateh1');
 const riseInElements = document.querySelectorAll('.riseIn');
 
 const fadeInElements = document.querySelectorAll('.fadeIn');
@@ -630,7 +635,7 @@ function animateClassFadeIn(elementList) {
 }
 
 document.addEventListener('scroll', function () {
-  animateValuesHeading(h1Elements)
+  animateValuesHeading(h1ElementsToAnimate)
   animateClassRiseIn(riseInElements)
   animateClassFadeIn(fadeInElements)
 }
