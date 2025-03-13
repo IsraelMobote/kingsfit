@@ -88,6 +88,8 @@ h1 {
     opacity: 0;
 }
 
+/*--------------------- heading one (animation styling) ----------------------*/
+
 @keyframes flyIn {
     0% {
         transform: translateY(220%);
@@ -105,7 +107,31 @@ h1 {
     opacity: 1;
  }
 
+/*--------------------- elements with moveIn class (animation styling) ----------------------*/
 
+.moveIn {
+    opacity: 0;
+    transition: 0.4s opacity;
+}
+
+@keyframes riseIn {
+    0% {
+        position: relative;
+        top: 2rem;
+    }
+    100% {
+        position: relative;
+        top: 0rem;
+    }
+}
+
+.moveIn.animate {
+    animation: riseIn 0.8s ease-in-out;
+}
+
+.moveIn.opacity {
+    opacity: 1;
+}
 
 .menuItemsContainer {
     display: none;
@@ -356,6 +382,7 @@ body.active {
 }
 
 #our-services div {
+    position: relative;
     width: 85%;
     margin: 80px auto;
     background-image: linear-gradient(var(--backgroundColor), var(--backgroundColor), var(--backgroundColor), white);
@@ -368,10 +395,12 @@ body.active {
 
 #our-services h2 {
     font-size: 0.9rem;
-    margin: 1.9rem 0 0;
+    margin: 1.9rem 0 9rem;
 }
 
 #our-services p {
+    position: absolute;
+    left: 7.5%;
     font-size: 0.87rem;
     font-weight: 400;
     line-height: 1.2rem;
