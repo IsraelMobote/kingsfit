@@ -120,14 +120,14 @@ h1.opacity {
         position: absolute;
         left: 7.5%;
         bottom: 0rem;
-        line-height: 1.5rem;
+        line-height: 1.7rem;
     }
 
     100% {
         position: absolute;
         left: 7.5%;
-        bottom: 3rem;
-        line-height: 1.2rem;
+        bottom: 3.5rem;
+        line-height: 1.3rem;
     }
 }
 
@@ -401,16 +401,16 @@ body.active {
 
 #our-services h2 {
     font-size: 0.9rem;
-    margin: 1.9rem 0 8.5rem;
+    margin: 1.9rem 0 11rem;
 }
 
 #our-services p {
     position: absolute;
     left: 7.5%;
-    bottom: 3rem;
-    font-size: 0.87rem;
+    bottom: 3.5rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     width: 85%;
     margin: 1.7rem auto 2rem;
 }
