@@ -268,6 +268,7 @@ function displayServices() {
 
     const serviceItemParagraph = document.createElement('p');
     serviceItemParagraph.textContent = element.textBody;
+    serviceItemParagraph.className = 'moveIn';
 
     const serviceItemButton = document.createElement('span');
     serviceItemButton.textContent = 'LEARN MORE';
@@ -588,10 +589,11 @@ function inView(element) {
 let complete = false;
 
 const  h1Elements = document.querySelectorAll('h1');
+const moveInElements = document.querySelectorAll('.moveIn');
 
-function animateValuesHeading() {
+function animateValuesHeading(elementList) {
 
-  h1Elements.forEach(element => {
+  elementList.forEach(element => {
    if (inView(element)) {
      element.classList.add('animate');
 
@@ -603,7 +605,20 @@ function animateValuesHeading() {
 
 }
 
+function animateClassMoveIn(elementList) {
+  elementList.forEach(element => {
+    if (inView(element)) {
+      element.classList.add('animate')
+
+      setTimeout(() => {
+        element.classList.add('opacity');
+      }, 200);
+    }
+  });
+}
+
 document.addEventListener('scroll', function () {
-  animateValuesHeading();
+  animateValuesHeading(h1Elements);
+  animateClassMoveIn(moveInElements);
 }
 );
