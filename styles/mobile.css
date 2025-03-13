@@ -108,9 +108,9 @@ h1.opacity {
     opacity: 1;
 }
 
-/*--------------------- elements with moveIn class (animation styling) ----------------------*/
+/*--------------------- elements with riseIn class (animation styling) ----------------------*/
 
-.moveIn {
+.riseIn {
     opacity: 0;
     transition: 0.4s opacity ease-in-out;
 }
@@ -131,11 +131,11 @@ h1.opacity {
     }
 }
 
-.moveIn.animate {
+.riseIn.animate {
     animation: riseIn 0.8s ease-in-out;
 }
 
-.moveIn.opacity {
+.riseIn.opacity {
     opacity: 1;
 }
 

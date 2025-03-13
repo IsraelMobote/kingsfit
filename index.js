@@ -268,7 +268,7 @@ function displayServices() {
 
     const serviceItemParagraph = document.createElement('p');
     serviceItemParagraph.textContent = element.textBody;
-    serviceItemParagraph.className = 'moveIn';
+    serviceItemParagraph.className = 'riseIn';
 
     const serviceItemButton = document.createElement('span');
     serviceItemButton.textContent = 'LEARN MORE';
@@ -589,7 +589,7 @@ function inView(element) {
 let complete = false;
 
 const  h1Elements = document.querySelectorAll('h1');
-const moveInElements = document.querySelectorAll('.moveIn');
+const riseInElements = document.querySelectorAll('.riseIn');
 
 function animateValuesHeading(elementList) {
 
@@ -605,7 +605,7 @@ function animateValuesHeading(elementList) {
 
 }
 
-function animateClassMoveIn(elementList) {
+function animateClassriseIn(elementList) {
   elementList.forEach(element => {
     if (inView(element)) {
       element.classList.add('animate')
@@ -619,6 +619,6 @@ function animateClassMoveIn(elementList) {
 
 document.addEventListener('scroll', function () {
   animateValuesHeading(h1Elements);
-  animateClassMoveIn(moveInElements);
+  animateClassriseIn(riseInElements);
 }
 );
