@@ -22,6 +22,8 @@ function removeClickedState() {
   getInTouch.classList.remove('clicked')
 };
 
+home.classList.add('clicked')
+
 home.addEventListener('click', () => {
   console.log('2')
   removeClickedState()
