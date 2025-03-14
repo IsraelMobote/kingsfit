@@ -323,7 +323,7 @@ function displayAboutUs(element) {
 
   let cleaningCounter = 0;
 
-  classNameList = ['dropIn', 'dropInTwo', 'dropInThree', 'dropInFour'];
+  classNameList = ['dropInOne', 'dropInTwo', 'dropInThree', 'dropInFour'];
 
   cleaningTypes.forEach(item => {
 
@@ -606,7 +606,10 @@ const h1ElementsToAnimate = document.querySelectorAll('.animateh1');
 const riseInElements = document.querySelectorAll('.riseIn');
 
 const fadeInElements = document.querySelectorAll('.fadeIn');
-const dropInElements = document.querySelectorAll('.dropIn');
+const dropInOne = document.querySelector('.dropInOne');
+const dropInTwo = document.querySelector('.dropInTwo');
+const dropInThree = document.querySelector('.dropInThree');
+const dropInFour = document.querySelector('.dropInFour');
 
 function animateValuesHeading(elementList) {
 
@@ -643,17 +646,35 @@ function animateClassFadeIn(elementList) {
   });
 }
 
-function animateClassdropIn(elementList) {
-  elementList.forEach(element => {
-    if (inView(element)) {
+function animateClassdropInOne() {
+  if (inView(dropInOne)) {
+    dropInOne.classList.add('animate')
+  }
+};
 
-      setTimeout(() => {
-        element.classList.add('animate')
-      }, 200);
+function animateClassdropInTwo() {
+  if (inView(dropInTwo)) {
+    setTimeout(() => {
+      dropInTwo.classList.add('animate')
+    }, 200);
+  }
+};
 
-    }
-  });
-}
+function animateClassdropInThree() {
+  if (inView(dropInThree)) {
+    setTimeout(() => {
+      dropInThree.classList.add('animate')
+    }, 400);
+  }
+};
+
+function animateClassdropInFour() {
+  if (inView(dropInFour)) {
+    setTimeout(() => {
+      dropInFour.classList.add('animate')
+    }, 600);
+  }
+};
 
 document.addEventListener('scroll', function () {
   animateValuesHeading(h1ElementsToAnimate)
