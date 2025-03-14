@@ -656,7 +656,7 @@ function animateClassdropInTwo() {
   if (inView(dropInTwo)) {
     setTimeout(() => {
       dropInTwo.classList.add('animate')
-    }, 200);
+    }, 280);
   }
 };
 
@@ -664,7 +664,7 @@ function animateClassdropInThree() {
   if (inView(dropInThree)) {
     setTimeout(() => {
       dropInThree.classList.add('animate')
-    }, 400);
+    }, 560);
   }
 };
 
@@ -672,7 +672,7 @@ function animateClassdropInFour() {
   if (inView(dropInFour)) {
     setTimeout(() => {
       dropInFour.classList.add('animate')
-    }, 600);
+    }, 840);
   }
 };
 
