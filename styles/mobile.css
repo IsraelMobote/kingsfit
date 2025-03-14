@@ -449,7 +449,7 @@ body.active {
 /*---------------- About Us Styling -------------------*/
 
 #about-us {
-    padding: 6rem 0 280px;
+    padding: 6rem 0 0;
     position: relative;
 }
 

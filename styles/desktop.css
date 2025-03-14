@@ -356,6 +356,10 @@
 
     /*--------------- About Us Styling --------------*/
 
+    #about-us {
+        padding-bottom: 280px;
+    }
+    
     #about-us>h1 {
         font-size: 2rem;
         padding-top: 2rem;
