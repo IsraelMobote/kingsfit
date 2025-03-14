@@ -680,6 +680,9 @@ document.addEventListener('scroll', function () {
   animateValuesHeading(h1ElementsToAnimate)
   animateClassRiseIn(riseInElements)
   animateClassFadeIn(fadeInElements)
-  animateClassdropIn(dropInElements)
+  animateClassdropInOne()
+  animateClassdropInTwo()
+  animateClassdropInThree()
+  animateClassdropInFour()
 }
 );

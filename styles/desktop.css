@@ -118,37 +118,70 @@
     }
 
     /*----------- elements with dropIn class (animation styling) -------------*/
-    .dropIn {
+    .dropInOne {
         opacity: 0;
+        transition: opacity 0.8s;
+    }
+
+    .dropInTwo {
+        opacity: 0;
+        transition: opacity 0.8s;
+    }
+
+    .dropInThree {
+        opacity: 0;
+        transition: opacity 0.8s;
+    }
+
+    .dropInFour {
+        opacity: 0;
+        transition: opacity 0.8s;
     }
 
     @keyframes dropIn {
         0% {
-          position: relative;
-          right: 1rem;
-          margin-bottom: 9rem;
+          position: absolute;
+          width: 20%;
+          right: 2rem;
+          transform: translate(-50%, -300%);
         }
 
         50% {
-            position: relative;
+            position: absolute;
             right: 0rem;
-            margin-bottom: 0;
+            transform: translate(0%, 0%);
         }
 
         75% {
-            position: relative;
-            margin-bottom: 0.5rem;
+            position: absolute;
+            transform: translateY(-2%);
         }
 
         100% {
-            position: relative;
-            margin-bottom: 0;
+            position: absolute;
+            width: 20%;
+            transform: translateY(0%);
         }
     }
 
-    .dropIn.animate {
+    .dropInOne.animate {
         opacity: 1;
-        animation: dropIn 1s ease-in-out;
+        animation: dropIn 1s ease-out;
+    }
+
+    .dropInTwo.animate {
+        opacity: 1;
+        animation: dropIn 1s ease-out;
+    }
+    
+    .dropInThree.animate {
+        opacity: 1;
+        animation: dropIn 1s ease-out;
+    }
+    
+    .dropInFour.animate {
+        opacity: 1;
+        animation: dropIn 1s ease-out;
     }
 
     /*------------- Hero Image Styling --------------*/
@@ -374,10 +407,9 @@
     }
 
 
-    #about-us .cleaningTypesContainer> .dropIn {
+    #about-us .cleaningTypesContainer> .dropInOne {
         position: absolute;
         left: 7%;
-        margin: 0 auto;
         width: 20%;
     }
 
