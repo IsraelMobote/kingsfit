@@ -396,11 +396,14 @@ function displayFeatures(element) {
 
   let counterNumber = 0
 
+  classNameList = ['dropInOne', 'dropInTwo', 'dropInThree', 'dropInFour'];
+
   featuresList.forEach(item => {
 
     counterNumber += 1
 
     const featureInnerContainer = document.createElement('div')
+    featureInnerContainer.className = classNameList[counterNumber - 1]
 
     const featureImage = document.createElement('img')
     featureImage.src = item.featureImage
@@ -606,10 +609,10 @@ const h1ElementsToAnimate = document.querySelectorAll('.animateh1');
 const riseInElements = document.querySelectorAll('.riseIn');
 
 const fadeInElements = document.querySelectorAll('.fadeIn');
-const dropInOne = document.querySelector('.dropInOne');
-const dropInTwo = document.querySelector('.dropInTwo');
-const dropInThree = document.querySelector('.dropInThree');
-const dropInFour = document.querySelector('.dropInFour');
+const dropInOne = document.querySelectorAll('.dropInOne');
+const dropInTwo = document.querySelectorAll('.dropInTwo');
+const dropInThree = document.querySelectorAll('.dropInThree');
+const dropInFour = document.querySelectorAll('.dropInFour');
 
 function animateValuesHeading(elementList) {
 
@@ -647,33 +650,41 @@ function animateClassFadeIn(elementList) {
 }
 
 function animateClassdropInOne() {
-  if (inView(dropInOne)) {
-    dropInOne.classList.add('animate')
-  }
+    dropInOne.forEach(element => {
+      if (inView(element)) {
+      element.classList.add('animate')
+    }
+})
 };
 
 function animateClassdropInTwo() {
-  if (inView(dropInTwo)) {
-    setTimeout(() => {
-      dropInTwo.classList.add('animate')
-    }, 280);
+  dropInTwo.forEach(element => {
+    if (inView(element)) {
+      setTimeout(() => {
+        element.classList.add('animate')
+      }, 280);
   }
+})
 };
 
 function animateClassdropInThree() {
-  if (inView(dropInThree)) {
-    setTimeout(() => {
-      dropInThree.classList.add('animate')
-    }, 560);
+  dropInThree.forEach(element => {
+    if (inView(element)) {
+      setTimeout(() => {
+        element.classList.add('animate')
+      }, 560);
   }
+})
 };
 
 function animateClassdropInFour() {
-  if (inView(dropInFour)) {
-    setTimeout(() => {
-      dropInFour.classList.add('animate')
-    }, 840);
+  dropInFour.forEach(element => {
+    if (inView(element)) {
+      setTimeout(() => {
+        element.classList.add('animate')
+      }, 840);
   }
+})
 };
 
 document.addEventListener('scroll', function () {

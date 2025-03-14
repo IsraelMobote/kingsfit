@@ -140,26 +140,18 @@
 
     @keyframes dropIn {
         0% {
-          position: absolute;
-          width: 20%;
-          right: 2rem;
-          transform: translate(-50%, -300%);
+            transform: translate(-50%, -300%);
         }
 
         50% {
-            position: absolute;
-            right: 0rem;
             transform: translate(0%, 0%);
         }
 
         75% {
-            position: absolute;
             transform: translateY(-2%);
         }
 
         100% {
-            position: absolute;
-            width: 20%;
             transform: translateY(0%);
         }
     }
@@ -173,12 +165,12 @@
         opacity: 1;
         animation: dropIn 1.1s ease-out;
     }
-    
+
     .dropInThree.animate {
         opacity: 1;
         animation: dropIn 1.1s ease-out;
     }
-    
+
     .dropInFour.animate {
         opacity: 1;
         animation: dropIn 1.1s ease-out;
@@ -356,10 +348,7 @@
 
     /*--------------- About Us Styling --------------*/
 
-    #about-us {
-        padding-bottom: 280px;
-    }
-    
+
     #about-us>h1 {
         font-size: 2rem;
         padding-top: 2rem;
@@ -411,28 +400,14 @@
     }
 
 
-    #about-us .cleaningTypesContainer> .dropInOne {
-        position: absolute;
-        left: 8%;
-        width: 20%;
+
+    #about-us .cleaningTypesContainer {
+        padding: 0 5%;
+        width: 100%;
     }
 
-    #about-us .cleaningTypesContainer > .dropInTwo {
-        position: absolute;
-        left: 31%;
-        width: 20%;
-    }
-
-    #about-us .cleaningTypesContainer > .dropInThree {
-        position: absolute;
-        left: 54%;
-        width: 20%;
-    }
-
-    #about-us .cleaningTypesContainer > .dropInFour {
-        position: absolute;
-        left: 77%;
-        width: 20%;
+    #about-us .cleaningTypesContainer>div {
+        width: 95%;
     }
 
     #about-us .cleaningTypesContainer>div>img {
@@ -447,6 +422,10 @@
     }
 
     /*--------------- Features Section Styling --------------*/
+
+    #features {
+        position: relative;
+    }
 
     #features img {
         height: 340px;
