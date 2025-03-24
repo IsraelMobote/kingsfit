@@ -180,34 +180,40 @@ servicesList = [{
   img: 'images/a-man-using-a-mower-with-two-hands.webp',
   alt: 'a man using a mower with two hands',
   title: 'MARBLE & FLOOR RESTORATION',
-  textBody: 'Save cost, Let our professional cleaning team increase the life span of your investment. Improve the look and feel of marble and floor designs with our well trained team.'
+  textBody: 'Save cost, Let our professional cleaning team increase the life span of your investment. Improve the look and feel of marble and floor designs with our well trained team.',
+  link: 'https://wa.link/oy6ymv'
 },
 {
   img: 'images/using-cleaning-solutions-to-clean-surfaces.webp',
   alt: 'an individual using cleaning solutions to clean surfaces',
   title: 'HOME/RESIDENTIAL CLEANING',
-  textBody: 'Do you have a busy schedule or need professional cleaners to take care of your home or commercial apartment? We provide special quality domestic cleaning services'
+  textBody: 'Do you have a busy schedule or need professional cleaners to take care of your home or commercial apartment? We provide special quality domestic cleaning services',
+  link: 'https://wa.link/t1zvuy'
 }, {
   img: 'images/medium-shot-workers-with-cleaning-cart.webp',
   alt: 'medium shot workers with cleaning cart',
   title: 'EVENT/PRE & AFTER PARTY CLEANING',
-  textBody: 'Your house or venue a mess after partying? Take out the after party cleaning stress with our cleaning team. Use our after party cleaning services for your next party or event'
+  textBody: 'Your house or venue a mess after partying? Take out the after party cleaning stress with our cleaning team. Use our after party cleaning services for your next party or event',
+  link: 'https://wa.link/xcsxrc'
 }, {
   img: 'images/an-individual-cleaning-with-vacuum-cleaner.webp',
   alt: 'an individual cleaning with vacuum cleaner',
   title: 'CARPET,RUG & UPHOLSTERY CLEANING',
-  textBody: 'We use modern equipments and quality friendly chemicals for carpet,rug and upholstery cleaning jobs. We offer hot water extraction by using powerful vacuum cleaners'
+  textBody: 'We use modern equipments and quality friendly chemicals for carpet,rug and upholstery cleaning jobs. We offer hot water extraction by using powerful vacuum cleaners',
+  link: 'https://wa.link/fy0ze4'
 },
 {
   img: 'images/Electrodry-Pest-Control-Services.webp',
   alt: '',
   title: 'FUMIGATION AND RATTING',
-  textBody: 'We offer the perfect selection of solutions to deal with; bed bugs, cockroaches, mosquitoes, snakes, scorpions, birdmites, rodent, insect or bird infestation'
+  textBody: 'We offer the perfect selection of solutions to deal with; bed bugs, cockroaches, mosquitoes, snakes, scorpions, birdmites, rodent, insect or bird infestation',
+  link: 'https://wa.link/8ou3b4'
 }, {
   img: 'images/an-exterminator-working-to-exterminate-insects-or-rodents.webp',
   alt: 'an exterminator working to exterminate insects or rodents',
   title: 'JANITORIAL/COMMERCIAL CLEANING',
-  textBody: 'First impressions do matter! Give your customers a good first impression and also improve productivity at your work place with our quality cleaning services'
+  textBody: 'First impressions do matter! Give your customers a good first impression and also improve productivity at your work place with our quality cleaning services',
+  link: 'https://wa.link/3sb672'
 }];
 
 aboutInfo = {
@@ -650,11 +656,11 @@ function animateClassFadeIn(elementList) {
 }
 
 function animateClassdropInOne() {
-    dropInOne.forEach(element => {
-      if (inView(element)) {
+  dropInOne.forEach(element => {
+    if (inView(element)) {
       element.classList.add('animate')
     }
-})
+  })
 };
 
 function animateClassdropInTwo() {
@@ -663,8 +669,8 @@ function animateClassdropInTwo() {
       setTimeout(() => {
         element.classList.add('animate')
       }, 280);
-  }
-})
+    }
+  })
 };
 
 function animateClassdropInThree() {
@@ -673,8 +679,8 @@ function animateClassdropInThree() {
       setTimeout(() => {
         element.classList.add('animate')
       }, 560);
-  }
-})
+    }
+  })
 };
 
 function animateClassdropInFour() {
@@ -683,8 +689,8 @@ function animateClassdropInFour() {
       setTimeout(() => {
         element.classList.add('animate')
       }, 840);
-  }
-})
+    }
+  })
 };
 
 document.addEventListener('scroll', function () {
