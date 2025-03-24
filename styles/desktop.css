@@ -601,27 +601,18 @@
 
 
     .logoInFooter {
+        position: relative;
+        left: 0rem;
+        height: 4.5rem;
         display: grid;
         grid-template-columns: auto 1fr;
-        width: 100%;
-        text-align: center;
-        color: rgb(12, 21, 48);
-    }
-
-    .logoInFooter img {
-       background-color: #0067C8;
-        justify-self: center;
+        column-gap: 7px;
+        justify-content: space-around;
+        width: fit-content;
+        margin-bottom: 1rem;
     }
 
     .logoInFooter .inFooter {
-        background-color: #0067C8;
-        justify-self: center;
-        position: relative;
-        display: block;
-        width: fit-content;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 0;
         padding: 0;
     }
 
