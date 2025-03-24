@@ -439,7 +439,7 @@ displayFeatures(features);
 
 const form = document.querySelector('form');
 
-const submitButtonLink = document.querySelector('button a');
+const submitButtonLink = document.querySelector('.submitButton');
 
 function getEmailLink() {
   let Name = ''
