@@ -447,21 +447,20 @@ function getEmailLink() {
 
   let message = ''
   message = document.querySelector('#message');
-  
-  Name.addEventListener('change', function() {
-     let emailMessage = ''
-     emailMessage = `My name is ${Name.value}, ${message.value}`
-  })
- 
-  message.addEventListener('change', function() {
+
+  Name.addEventListener('change', getMainMessage)
+
+  message.addEventListener('change', getMainMessage)
+
+  function getMainMessage() {
     let emailMessage = ''
     emailMessage = `My name is ${Name.value}, ${message.value}`
-  })
 
-  const newMessage = emailMessage.replaceAll(' ', '%20');
-  const mainMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message&body=Hi%2C%0A%0A${newMessage}%0A%0AThank%20you`
+    let newMessage = emailMessage.replaceAll(' ', '%20');
+    let mainMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message&body=Hi%2C%0A%0A${newMessage}%0A%0AThank%20you`
 
-  submitButtonLink.href = mainMessage;
+    submitButtonLink.href = mainMessage;
+  }
 
 }
 
