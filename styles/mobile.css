@@ -489,6 +489,7 @@ body.active {
     padding: 12px 40px;
     border-radius: 10px;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 #our-services a:hover {
