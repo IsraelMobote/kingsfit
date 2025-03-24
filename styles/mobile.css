@@ -18,11 +18,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/*---------  the menu icon styling  --------*/
+
 
 body {
     position: relative;
 }
+
+/*---------  the header styling  --------*/
 
 header {
     position: fixed;
@@ -47,6 +49,36 @@ header {
 .headerItems {
     display: none;
 }
+
+/*--------- logo styling  --------*/
+
+#logo div {
+    text-align: right;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #3692e7;
+}
+
+#logo img {
+    grid-column: 1;
+    grid-row: 1 / 2;
+    width: 50px;
+}
+
+#logo div>.largeFontSize {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+#logo div>.smallFontSize {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+/*---------  the menu icon styling  --------*/
 
 .container {
     display: inline-block;
