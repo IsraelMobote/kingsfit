@@ -686,7 +686,7 @@ button {
     margin-left: 0.8rem;
     padding: 15px 30px;
     border: 0;
-    background-color: rgba(161, 155, 155, 0.63);
+    background-color: gray;
     border-radius: 13px;
     text-decoration: none;
     color: black;

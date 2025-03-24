@@ -611,18 +611,20 @@
     }
 
     .logoInFooter img {
-        display: block;
+       background-color: #0067C8;
         justify-self: center;
     }
 
     .logoInFooter .inFooter {
+        background-color: #0067C8;
         justify-self: center;
         position: relative;
         display: block;
-        width: 100%;
+        width: fit-content;
         text-align: center;
         margin: 0 auto;
         padding-top: 0;
+        padding: 0;
     }
 
     .footerContainer {
