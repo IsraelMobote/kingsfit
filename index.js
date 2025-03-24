@@ -460,8 +460,7 @@ function getMainMessage() {
   let mainMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message&body=Hi%2C%0A%0A${newMessage}%0A%0AThank%20you`
 
   submitButtonLink.href = mainMessage;
-
-
+  submitButtonLink.classList.add('active');
 }
 
 const fumigationAndRattingSection = document.querySelector('#fumigationAndRatting');
