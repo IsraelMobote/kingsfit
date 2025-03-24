@@ -601,9 +601,8 @@
 
 
     .logoInFooter {
-        position: relative;
-        height: 4.5rem;
-        display: block;
+        display: grid;
+        grid-template-columns: auto 1fr;
         width: 100%;
         text-align: center;
         color: rgb(12, 21, 48);
