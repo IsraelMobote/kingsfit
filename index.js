@@ -516,6 +516,7 @@ function displayFumigationSection(element) {
     const appointmentButton = document.createElement('a')
     appointmentButton.textContent = 'BOOK APPOINTMENT'
     appointmentButton.href = item.link
+    appointmentButton.target = '_blank'
 
     innerSectionContainer.append(cornerImage)
     innerSectionContainer.append(fullImage)
