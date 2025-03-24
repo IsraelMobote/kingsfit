@@ -75,7 +75,7 @@ header {
 #logo .largeFontSize {
     grid-column: 2;
     grid-row: 1;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 700;
     align-self: self-end;
     text-align: start;
