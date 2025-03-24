@@ -54,6 +54,7 @@ header {
 
 #logo {
     position: absolute;
+    top: 1px;
     text-align: right;
     width: 60%;
     display: grid;
