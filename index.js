@@ -471,7 +471,8 @@ fumigationList = [{
   fullImage: 'images/people-disinfecting-together-dangerous-area-wearing-white-overall-clothing.webp',
   fullImageAlt: 'people disinfecting together dangerous area wearing white overall clothing',
   body: `We offer the perfect selection of solutions to deal with; bed bugs, cockroaches,
-   mosquitoes, snakes, scorpions, bird-mites, rodent, insect or bird infestation.`
+   mosquitoes, snakes, scorpions, bird-mites, rodent, insect or bird infestation.`,
+  link: 'https://wa.link/4thzlt'
 }, {
   cornerImage: 'images/an-individual-disinfecting-a-room-wearing-a-white-overall-clothing.webp',
   cornerImageAlt: 'an individual disinfecting a room wearing a white overall clothing',
@@ -479,7 +480,8 @@ fumigationList = [{
   fullImageAlt: 'a man in blue outfit and wearing a face mask while using a sprayer',
   body: `Keep your home clean and safe with our professional rat extermination services. 
   Our team effectively eliminates rodents, preventing the spread of diseases and
-   protecting your family's health.`
+   protecting your family's health.`,
+  link: 'https://wa.link/e39qjz'
 }]
 
 function displayFumigationSection(element) {
@@ -511,9 +513,14 @@ function displayFumigationSection(element) {
     const body = document.createElement('p')
     body.textContent = item.body
 
+    const appointmentButton = document.createElement('a')
+    appointmentButton.textContent = 'BOOK APPOINTMENT'
+    appointmentButton.href = item.link
+
     innerSectionContainer.append(cornerImage)
     innerSectionContainer.append(fullImage)
     innerSectionContainer.append(body)
+    innerSectionContainer.append(appointmentButton)
 
     fumigationSectionContainer.append(innerSectionContainer);
   });
