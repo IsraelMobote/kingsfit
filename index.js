@@ -280,6 +280,7 @@ function displayServices() {
 
     const serviceItemButton = document.createElement('a');
     serviceItemButton.textContent = 'BOOK APPOINTMENT';
+    serviceItemButton.href = element.link;
 
     serviceContainer.append(image);
     serviceContainer.append(serviceItemHeading);
