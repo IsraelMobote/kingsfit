@@ -88,17 +88,17 @@
 
     /*--------- logo styling  --------*/
 
-    #logo {
+    .logo {
         position: absolute;
         top: 0.3rem;
         left: 2.2rem;
     }
 
-    #logo .largeFontSize {
+    .logo .largeFontSize {
         font-size: 0.8rem;
     }
 
-    #logo .smallFontSize {
+    .logo .smallFontSize {
         font-size: 0.5rem;
         padding: 0.2rem 0 0 0.7rem;
     }
