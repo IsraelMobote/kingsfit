@@ -55,6 +55,7 @@ header {
 #logo {
     position: absolute;
     top: 0.3rem;
+    left: 0rem;
     text-align: right;
     width: 60%;
     height: 4.5rem;
