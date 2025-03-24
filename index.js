@@ -273,7 +273,7 @@ function displayServices() {
     serviceItemParagraph.className = 'riseIn';
 
     const serviceItemButton = document.createElement('span');
-    serviceItemButton.textContent = 'LEARN MORE';
+    serviceItemButton.textContent = 'BOOK APPOINTMENT';
 
     serviceContainer.append(image);
     serviceContainer.append(serviceItemHeading);
