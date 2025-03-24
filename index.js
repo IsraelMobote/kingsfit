@@ -441,35 +441,28 @@ const form = document.querySelector('form');
 
 const submitButtonLink = document.querySelector('.submitButton');
 
-function getEmailLink() {
-  let Name = ''
-  Name = document.querySelector('#name');
 
-  let message = ''
-  message = document.querySelector('#message');
+let Name = ''
+Name = document.querySelector('#name');
 
-  Name.addEventListener('change', getMainMessage)
+let message = ''
+message = document.querySelector('#message');
 
-  message.addEventListener('change', getMainMessage)
+Name.addEventListener('change', getMainMessage);
 
-  function getMainMessage() {
-    let emailMessage = ''
-    emailMessage = `My name is ${Name.value}, ${message.value}`
+message.addEventListener('change', getMainMessage);
 
-    let newMessage = emailMessage.replaceAll(' ', '%20');
-    let mainMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message&body=Hi%2C%0A%0A${newMessage}%0A%0AThank%20you`
+function getMainMessage() {
+  let emailMessage = ''
+  emailMessage = `My name is ${Name.value}, ${message.value}`
 
-    submitButtonLink.href = mainMessage;
-  }
+  let newMessage = emailMessage.replaceAll(' ', '%20');
+  let mainMessage = `mailto:finixsolutions02@gmail.com?subject=get%20in%20touch%20message&body=Hi%2C%0A%0A${newMessage}%0A%0AThank%20you`
+
+  submitButtonLink.href = mainMessage;
+
 
 }
-
-form.addEventListener('submit', function (event) {
-
-  event.preventDefault();
-
-  getEmailLink();
-});
 
 const fumigationAndRattingSection = document.querySelector('#fumigationAndRatting');
 
