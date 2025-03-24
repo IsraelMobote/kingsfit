@@ -478,8 +478,9 @@ fumigationList = [{
   cornerImageAlt: 'an individual disinfecting a room wearing a white overall clothing',
   fullImage: 'images/a-man-in-blue-outfit-and-wearing-a-face-mask-while-using-a-sprayer.webp',
   fullImageAlt: 'a man in blue outfit and wearing a face mask while using a sprayer',
-  body: `We offer the perfect selection of solutions to deal with; bed bugs, cockroaches,
-   mosquitoes, snakes, scorpions, bird-mites, rodent, insect or bird infestation.`
+  body: `Keep your home clean and safe with our professional rat extermination services. 
+  Our team effectively eliminates rodents, preventing the spread of diseases and
+   protecting your family's health.`
 }]
 
 function displayFumigationSection(element) {
