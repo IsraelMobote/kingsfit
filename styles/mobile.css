@@ -479,7 +479,7 @@ body.active {
     margin: 1.7rem auto 2rem;
 }
 
-#our-services span {
+#our-services a {
     font-size: 0.9rem;
     display: block;
     width: fit-content;
@@ -488,6 +488,13 @@ body.active {
     margin: 0 auto;
     padding: 12px 40px;
     border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#our-services a:hover {
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
 }
 
 /*---------------- About Us Styling -------------------*/
@@ -839,7 +846,7 @@ footer {
     background-color: #bad3e960;
     border-bottom: 60px solid var(--primaryColor);
     margin-top: 7.5rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 
@@ -849,14 +856,16 @@ footer {
     position: relative;
     height: 4.5rem;
     display: block;
-    width: 100%;
+    width: 60%;
     text-align: center;
-    color: rgb(12, 21, 48);
+    color: #0c1530;
+    margin: 0 auto 3rem;
 }
 
 .logoInFooter img {
     display: block;
     justify-self: center;
+    margin-bottom: 0.7rem;
 }
 
 .logoInFooter .inFooter {
@@ -867,6 +876,8 @@ footer {
     text-align: center;
     margin: 0 auto;
     padding-top: 0;
+    padding-left: 0;
+    line-height: 0.8rem;
 }
 
 

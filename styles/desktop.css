@@ -600,6 +600,31 @@
         padding-top: 3rem;
     }
 
+
+    .logoInFooter {
+        position: relative;
+        height: 4.5rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: rgb(12, 21, 48);
+    }
+
+    .logoInFooter img {
+        display: block;
+        justify-self: center;
+    }
+
+    .logoInFooter .inFooter {
+        justify-self: center;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
     .footerContainer {
         width: 90%;
         display: grid;
