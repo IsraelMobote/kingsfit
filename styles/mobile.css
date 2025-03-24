@@ -678,21 +678,29 @@ button {
     margin-left: 22px;
 }
 
-#getInTouchSection button {
-    margin: 1.9rem auto;
+#getInTouchSection textarea {
+    margin-bottom: 3rem;
+}
+
+#getInTouchSection .submitButton {
+    margin-left: 0.8rem;
     padding: 15px 30px;
     border: 0;
     background-color: var(--primaryColor);
     border-radius: 13px;
-}
-
-#getInTouchSection button a,
-#getInTouchSection button a:focus {
     text-decoration: none;
     color: white;
+    transition: background-color 0.3s;
+}
+
+#getInTouchSection .submitButton:hover {
+    background: transparent;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
 }
 
 #getInTouchSection>img {
+    margin-top: 3rem;
     width: 100%;
 }
 
