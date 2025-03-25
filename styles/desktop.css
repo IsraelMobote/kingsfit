@@ -84,7 +84,7 @@
         padding-bottom: 3px;
         border-bottom: 5px solid var(--primaryColor);
     }
-    
+
     .menuItems {
         display: none;
     }
@@ -435,7 +435,7 @@
         height: 110px;
         margin: 1rem auto;
     }
-    
+
 
     #about-us .cleaningTypesContainer>div>p.title {
         font-size: 1rem;
