@@ -84,7 +84,10 @@
         padding-bottom: 3px;
         border-bottom: 5px solid var(--primaryColor);
     }
-
+    
+    .menuItems {
+        display: none;
+    }
 
     /*--------- logo styling  --------*/
 
