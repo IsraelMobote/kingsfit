@@ -209,7 +209,7 @@ servicesList = [{
   img: 'images/Electrodry-Pest-Control-Services.webp',
   alt: '',
   title: 'FUMIGATION AND RATTING',
-  textBody: 'We offer the perfect selection of solutions to deal with; bed bugs, cockroaches, mosquitoes, snakes, scorpions, birdmites, rodent, insect or bird infestation',
+  textBody: 'We offer the perfect selection of solutions to deal with; bed bugs, cockroaches, mosquitoes, snakes, scorpions, rodent, insect or bird infestation',
   link: 'https://wa.link/8ou3b4'
 }, {
   img: 'images/an-exterminator-working-to-exterminate-insects-or-rodents.webp',

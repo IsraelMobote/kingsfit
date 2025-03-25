@@ -1,0 +1,17 @@
+@media screen and (min-width: 40rem) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: var(--primaryFont);
+    }
+
+    :root {
+        --primaryFont: 'Inter', Helvetica, sans-serif;
+        --backgroundColor: #e4f4ff70;
+        --primaryColor: #0067C8;
+        --secondaryColor: #000000;
+        --tertiaryColor: #D9D9D9;
+    }
+
+}
