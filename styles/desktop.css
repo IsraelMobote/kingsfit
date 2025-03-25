@@ -417,10 +417,9 @@
         line-height: 1.3rem;
     }
 
-
-
     #about-us .cleaningTypesContainer {
-        padding: 0 5%;
+        position: relative;
+        left: 5%;
         width: 100%;
     }
 
@@ -443,6 +442,7 @@
 
     #features {
         position: relative;
+        margin-top: 2rem;
     }
 
     #features img {
