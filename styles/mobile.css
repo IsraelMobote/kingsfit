@@ -264,6 +264,16 @@ body.active {
     margin-top: 7rem;
 }
 
+.menuItems>p>a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.menuItems>p>a:hover {
+    font-weight: 700;
+    border-bottom: 3px solid var(--primaryColor);
+}
+
 .menuItems>p:last-child {
     width: fit-content;
     padding: 5px 15px;
@@ -284,10 +294,9 @@ body.active {
     padding: 0 3px 0 12px;
 }
 
-
-.menuItems>p>a {
-    color: var(--primaryColor);
-    text-decoration: none;
+.menuItems>p:last-child:hover {
+    font-weight: 700;
+    border: 2px solid var(--primaryColor);
 }
 
 .heroImage {
