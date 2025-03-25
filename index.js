@@ -1,3 +1,6 @@
+function bookAppointment() {
+  window.open('https://wa.link/awzko8','_blank');
+}
 
 function myFunction(x) {
   x.classList.toggle("change");
