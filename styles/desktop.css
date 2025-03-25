@@ -1,4 +1,4 @@
-@media screen and (min-width: 67rem) {
+@media screen and (min-width: 66rem) {
 
     * {
         padding: 0;
@@ -222,7 +222,7 @@
     }
 
     .heroText {
-        width: 50%;
+        width: 52%;
         position: absolute;
         top: 50px;
         padding-top: 60px;

@@ -202,6 +202,14 @@
 
     /*---------------- About Us Styling -------------------*/
 
+
+
+    #about-us .cleaningTypesContainer>div>img {
+        width: 60%;
+        margin-top: 2rem;
+    }
+
+
     #about-us>div>div:last-child>div>p {
         font-size: 0.8rem;
         font-weight: 400;
