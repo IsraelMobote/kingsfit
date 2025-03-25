@@ -1,5 +1,5 @@
 function bookAppointment() {
-  window.open('https://wa.link/awzko8','_blank');
+  window.open('https://wa.link/d2mcfn','_blank');
 }
 
 function myFunction(x) {
