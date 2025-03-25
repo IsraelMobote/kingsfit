@@ -943,3 +943,13 @@ footer {
     font-weight: 800;
     margin-bottom: 0.95rem;
 }
+
+.footerContainer>div>.headingInFooter>a {
+    color: black;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footerContainer>div>.headingInFooter>a:hover {
+    color: var(--primaryColor);
+}
