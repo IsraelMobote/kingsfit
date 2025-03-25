@@ -712,6 +712,10 @@ button {
 
 /*--------------- Fumigation and Ratting Section ----------------*/
 
+#fumigationAndRatting {
+    margin-bottom: 2rem;
+}
+
 #fumigationAndRatting>h1 {
     font-size: 1.4rem;
     text-align: center;
@@ -733,7 +737,7 @@ button {
 
 #fumigationAndRatting div>div {
     position: relative;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 #fumigationAndRatting div>div>img:first-child {
@@ -761,6 +765,26 @@ button {
     line-height: 1.1rem;
     margin: 1.5rem 0 3rem;
 }
+
+#fumigationAndRatting a {
+    font-size: 0.9rem;
+    display: block;
+    width: fit-content;
+    color: white;
+    background-color: var(--primaryColor);
+    margin: 0 auto;
+    padding: 12px 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+#fumigationAndRatting a:hover {
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+
 
 /*------------- FAQs Styling -------------*/
 

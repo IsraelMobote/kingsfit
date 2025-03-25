@@ -471,7 +471,8 @@ fumigationList = [{
   fullImage: 'images/people-disinfecting-together-dangerous-area-wearing-white-overall-clothing.webp',
   fullImageAlt: 'people disinfecting together dangerous area wearing white overall clothing',
   body: `We offer the perfect selection of solutions to deal with; bed bugs, cockroaches,
-   mosquitoes, snakes, scorpions, bird-mites, rodent, insect or bird infestation.`,
+   mosquitoes, snakes, scorpions, rodent or bird infestation. We are focused
+   on delivering quality service that meets top standard`,
   link: 'https://wa.link/4thzlt'
 }, {
   cornerImage: 'images/an-individual-disinfecting-a-room-wearing-a-white-overall-clothing.webp',
